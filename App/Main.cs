@@ -39,7 +39,8 @@ namespace App
                 MainData.OnTask += new TaskEventHandler(Data_OnTask);
                 this.BindData();
                 for (int i = 0; i < this.dgvMain.Columns.Count - 1; i++)
-                    ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
+                    if (this.dgvMain.Columns[i].DataPropertyName.ToLower().IndexOf("date") == -1)
+                        ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
 
                 tmWorkTimer.Interval = 3000;
                 tmWorkTimer.Elapsed += new System.Timers.ElapsedEventHandler(tmWorker);
@@ -226,9 +227,8 @@ namespace App
                 this.ToolStripMenuItem_Cell.Visible = true;
                 this.toolStripButton_CellMonitor.Visible = true;
             }
-            
 
-
+            this.ToolStripMenuItemDelCraneTask.Visible = false;
 
             //监控任务--重新下发堆垛机任务
             filter = "SubModuleCode='MNU_W00A_00A' and OperatorCode='2'";
@@ -237,6 +237,24 @@ namespace App
                 this.ToolStripMenuItemReassign.Visible = false;
             else
                 this.ToolStripMenuItemReassign.Visible = true;
+
+
+            filter = "SubModuleCode='MNU_W00A_00A' and OperatorCode='4'";
+            drs = dt.Select(filter);
+            if (drs.Length <= 0)
+                this.ToolStripMenuItemReassignConvey.Visible = false;
+            else
+                this.ToolStripMenuItemReassignConvey.Visible = true;
+
+
+
+            filter = "SubModuleCode='MNU_W00A_00A' and OperatorCode='5'";
+            drs = dt.Select(filter);
+            if (drs.Length <= 0)
+                this.ToolStripMenuItemReassignAGV.Visible = false;
+            else
+                this.ToolStripMenuItemReassignAGV.Visible = true;
+
 
             //监控任务--任务状态切换
             filter = "SubModuleCode='MNU_W00A_00A' and OperatorCode='3'";
@@ -622,6 +640,13 @@ namespace App
                 DataTable dt = Program.dtUserPermission.Clone();
                 Program.dtUserPermission = dt;
                 PermissionControl();
+                foreach (Form mdifrm in this.MdiChildren)
+                {
+                    if (mdifrm.Text != "监控")
+                    {
+                        mdifrm.Close();
+                    }
+                }
             }
         }
 

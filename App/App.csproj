@@ -356,18 +356,6 @@
     <Compile Include="View\frmReassignEmptyCell.designer.cs">
       <DependentUpon>frmReassignEmptyCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmReassignOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmReassignOption.Designer.cs">
-      <DependentUpon>frmReassignOption.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmTaskOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmTaskOption.Designer.cs">
-      <DependentUpon>frmTaskOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Param\Parameter.cs" />
     <Compile Include="View\Param\ParameterForm.cs">
       <SubType>Form</SubType>
@@ -576,12 +564,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmReassignEmptyCell.resx">
       <DependentUpon>frmReassignEmptyCell.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmReassignOption.resx">
-      <DependentUpon>frmReassignOption.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmTaskOption.resx">
-      <DependentUpon>frmTaskOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Param\ParameterForm.resx">
       <DependentUpon>ParameterForm.cs</DependentUpon>

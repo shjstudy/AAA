@@ -180,8 +180,6 @@ D:\Work\AAA\App\obj\x86\Debug\App.View.Dispatcher.frmCellQuery.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.frmMonitor.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.frmReassign.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.frmReassignEmptyCell.resources
-D:\Work\AAA\App\obj\x86\Debug\App.View.frmReassignOption.resources
-D:\Work\AAA\App\obj\x86\Debug\App.View.frmTaskOption.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.Param.ParameterForm.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.SelectDialog.resources
 D:\Work\AAA\App\obj\x86\Debug\App.View.Task.frmMiniLoadTask.resources
@@ -231,3 +229,4 @@ D:\Work\AAA\App\bin\Debug\MCP.Service.Siemens.dll
 D:\Work\AAA\App\bin\Debug\OPC.dll
 D:\Work\AAA\App\bin\Debug\Util.dll
 D:\Work\AAA\App\obj\x86\Debug\App.View.Query.frmSafeQtyQuery.resources
+D:\Work\AAA\App\obj\x86\Debug\App.csprojResolveAssemblyReference.cache
