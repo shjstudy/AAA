@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="transWCSExecuteTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transWCSExecuteTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transWCSExecuteTaskResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transWCSTaskStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transWCSTaskStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transWCSTaskStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="transWCSExecuteTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:transWCSExecuteTask" />
+  </wsdl:message>
+  <wsdl:message name="transWCSExecuteTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:transWCSExecuteTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="transWCSTaskStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:transWCSTaskStatus" />
+  </wsdl:message>
+  <wsdl:message name="transWCSTaskStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:transWCSTaskStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WCSDataServiceSoap">
+    <wsdl:operation name="transWCSExecuteTask">
+      <wsdl:input message="tns:transWCSExecuteTaskSoapIn" />
+      <wsdl:output message="tns:transWCSExecuteTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="transWCSTaskStatus">
+      <wsdl:input message="tns:transWCSTaskStatusSoapIn" />
+      <wsdl:output message="tns:transWCSTaskStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WCSDataServiceSoap" type="tns:WCSDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transWCSExecuteTask">
+      <soap:operation soapAction="http://tempuri.org/transWCSExecuteTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transWCSTaskStatus">
+      <soap:operation soapAction="http://tempuri.org/transWCSTaskStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WCSDataServiceSoap12" type="tns:WCSDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transWCSExecuteTask">
+      <soap12:operation soapAction="http://tempuri.org/transWCSExecuteTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transWCSTaskStatus">
+      <soap12:operation soapAction="http://tempuri.org/transWCSTaskStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCSDataService">
+    <wsdl:port name="WCSDataServiceSoap" binding="tns:WCSDataServiceSoap">
+      <soap:address location="http://localhost:8862/WCSDataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WCSDataServiceSoap12" binding="tns:WCSDataServiceSoap12">
+      <soap12:address location="http://localhost:8862/WCSDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

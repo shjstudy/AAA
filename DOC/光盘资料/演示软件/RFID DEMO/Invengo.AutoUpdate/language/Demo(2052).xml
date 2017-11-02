@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- &#xD;&#xA;&#x9;对应 \r\n\t-->
+<Demo Name="中文(&amp;C)">
+  <Form Name="UpdateForm">
+    <Control Name="UpdateForm">RFID读写器通用演示软件-升级</Control>
+    <Control Name="pic_Config">FTP设置</Control>
+    <Control Name="labCommon">基本信息：</Control>
+    <Control Name="groupBox1">FTP设置</Control>
+    <Control Name="btConfig">确定</Control>
+    <Control Name="label5">密码：</Control>
+    <Control Name="label4">帐号：</Control>
+    <Control Name="label3">端口：</Control>
+    <Control Name="label2">服务器IP：</Control>
+    <Control Name="labNewVer">最新版本：</Control>
+    <Control Name="labCurrentVer">当前版本：</Control>
+    <Control Name="labMsg">输出信息：</Control>     
+    <Control Name="btnStart">开始</Control>
+  </Form>
+  <MessageBox>
+    <Button Name="IDOK">确定</Button>
+    <Button Name="IDCANCEL">取消</Button>
+    <Button Name="IDABORT">终止</Button>
+    <Button Name="IDRETRY">重试</Button>
+    <Button Name="IDIGNORE">忽略</Button>
+    <Button Name="IDYES">是</Button>
+    <Button Name="IDNO">否</Button>
+  </MessageBox>
+  <Theme>
+    <Name FileName="Style_Default">默认样式(&amp;D)</Name>
+    <Name FileName="Invengo">远望谷(&amp;I)</Name>
+    <Name FileName="Spring">春韵(&amp;S)</Name>
+    <Name FileName="Summer">夏爽(&amp;M)</Name>
+    <Name FileName="Autumn">金秋(&amp;A)</Name>
+    <Name FileName="Winter">冬天(&amp;W)</Name>
+    <Name FileName="Cool">酷(&amp;C)</Name>
+    <Name FileName="Blue">蓝色(&amp;B)</Name>
+  </Theme>
+  <Message>
+    <Item Name="MSG_1">开始检测与服务器的网络连接</Item>
+    <Item Name="MSG_2">开始检查是否有更新。</Item>    
+    <Item Name="MSG_3">开始下载更新文件...</Item>
+    <Item Name="MSG_4">下载文件 </Item>
+    <Item Name="MSG_5">下载文件出错！</Item>
+    <Item Name="MSG_6">检查更新失败！</Item>
+    <Item Name="MSG_7">IP地址为空或者账户错误。</Item>
+    <Item Name="MSG_8">连接到FTP服务器失败。</Item>
+    <Item Name="MSG_9">下载已完成，开始更新本地文件...请稍等</Item>
+    <Item Name="MSG_10">升级正常完成，您的版本已升级到最新版。</Item>
+    <Item Name="MSG_11">更新版本到 </Item>
+    <Item Name="MSG_12">共有{0}个文件需要更新，总计约{1}。</Item>
+    <Item Name="MSG_13">当前版本：</Item>
+    <Item Name="MSG_14">最新版本:</Item>
+    <Item Name="MSG_15">IP地址不合法。</Item>
+    <Item Name="MSG_16">下载文件{0}失败！可能是网络连接问题，请确认后重试。</Item>
+    <Item Name="MSG_17">系统提示</Item>
+    <Item Name="MSG_18">您的版本是最新版。</Item>
+  </Message>
+</Demo>

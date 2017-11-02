@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Demo Name="&amp;English">
+  <Form Name="UpdateForm">
+    <Control Name="UpdateForm">RFID Reader Demo-upgrade </Control>
+    <Control Name="pic_Config">FTP Config</Control>
+    <Control Name="labCommon">Current Info：</Control>
+    <Control Name="groupBox1">FTP Config</Control>
+    <Control Name="btConfig">Sure</Control>
+    <Control Name="label5">Password：</Control>
+    <Control Name="label4">User：</Control>
+    <Control Name="label3">Port：</Control>
+    <Control Name="label2">Server IP：</Control>
+    <Control Name="labNewVer">Latest version：</Control>
+    <Control Name="labCurrentVer">Current version：</Control>
+    <Control Name="labMsg">output message：</Control>
+    <Control Name="btnStart">Start</Control>
+  </Form>
+  <MessageBox>
+    <Button Name="IDOK">OK</Button>
+    <Button Name="IDCANCEL">Cancel</Button>
+    <Button Name="IDABORT">Terminate</Button>
+    <Button Name="IDRETRY">Terminate</Button>
+    <Button Name="IDIGNORE">Ignore</Button>
+    <Button Name="IDYES">Yes</Button>
+    <Button Name="IDNO">No</Button>
+  </MessageBox>
+  <Theme>
+    <Name FileName="Style_Default">Default (&amp;D)</Name>
+    <Name FileName="Invengo">Invengo (&amp;I)</Name>
+    <Name FileName="Spring">Spring (&amp;S)</Name>
+    <Name FileName="Summer">Summer (&amp;M)</Name>
+    <Name FileName="Autumn">Autumn (&amp;A)</Name>
+    <Name FileName="Winter">Winter(&amp;W)</Name>
+    <Name FileName="Cool">Style (&amp;C)</Name>
+    <Name FileName="Blue">Blue (&amp;B)</Name>
+  </Theme>
+  <Message>
+    <Item Name="MSG_1">Start testing and the server's network connection</Item>
+    <Item Name="MSG_2">Began to check for updates.</Item>
+    <Item Name="MSG_3">Started to download the update files...</Item>
+    <Item Name="MSG_4">ncftp get </Item>
+    <Item Name="MSG_5">Download file error!</Item>
+    <Item Name="MSG_6">fail to check the update !</Item>
+    <Item Name="MSG_7">IP address is empty or account mistakes.</Item>
+    <Item Name="MSG_8">Link to the FTP server failure。</Item>
+    <Item Name="MSG_9">Download has been completed, then began to update the local files... Please wait a moment</Item>
+    <Item Name="MSG_10">Upgrade completes, your program version is latest now.</Item>
+    <Item Name="MSG_11">Updated version to </Item>
+    <Item Name="MSG_12">There are {0} documents that need to be updated, totaled about {1} .</Item>
+    <Item Name="MSG_13">Current version：</Item>
+    <Item Name="MSG_14">Latest version:</Item>
+    <Item Name="MSG_15">IP address illegal.</Item>
+    <Item Name="MSG_16">Download file {0} failed! May is the network connection problem, please try again after confirmation.</Item>
+    <Item Name="MSG_17">system prompt</Item>
+    <Item Name="MSG_18">Your version is the latest version.</Item>
+    <Item Name="MSG_19">Loading FTP configuration failure.</Item>   
+    <Item Name="MSG_20">Statistical file information failure.</Item>   
+  </Message>
+</Demo>

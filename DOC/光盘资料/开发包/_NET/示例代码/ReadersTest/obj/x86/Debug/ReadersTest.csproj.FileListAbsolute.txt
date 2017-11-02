@@ -1,0 +1,33 @@
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\Sysit.xml
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\ReadersTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\ReadersTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\Communication.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\IRP1.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\RFIDInterface.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\Communication.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\IRP1.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Debug\RFIDInterface.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.csprojResolveAssemblyReference.cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.MainForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.Properties.Resources.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.ReaderConfigForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.SysitConfigForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.TagAccessForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.csproj.GenerateResource.Cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.pdb
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.exe
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.pdb
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.MainForm.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.Properties.Resources.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.ReaderConfigForm.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.SysitConfigForm.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.TagAccessForm.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\obj\x86\Debug\ReadersTest.csproj.GenerateResource.Cache
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\Sysit.xml
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\ReadersTest.exe
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\ReadersTest.pdb
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\Communication.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\Invengo.Language.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\IRP1.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\ReadersTest\bin\Debug\RFIDInterface.dll

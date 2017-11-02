@@ -1,0 +1,15 @@
+2017/9/26 9:50:12 [ERROR]2017/9/26 9:50:12初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 10:05:07 [ERROR]2017/9/26 10:05:07初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 10:06:52 [ERROR]2017/9/26 10:06:52初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 10:08:05 [ERROR]2017/9/26 10:08:05初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 10:21:53 [ERROR]2017/9/26 10:21:53初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 10:21:57 [INFO]2017/9/26 10:21:57退出系统 
+2017/9/26 11:24:36 [ERROR]2017/9/26 11:24:36初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:34:42 [ERROR]2017/9/26 11:34:42初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:38:31 [ERROR]2017/9/26 11:38:31初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:38:38 [INFO]2017/9/26 11:38:38退出系统 
+2017/9/26 11:42:35 [ERROR]2017/9/26 11:42:35初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:43:34 [ERROR]2017/9/26 11:43:34初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:44:06 [ERROR]2017/9/26 11:44:06初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/26 11:44:23 [INFO]2017/9/26 11:44:23退出系统 
+2017/9/26 11:59:09 [ERROR]2017/9/26 11:59:09初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 

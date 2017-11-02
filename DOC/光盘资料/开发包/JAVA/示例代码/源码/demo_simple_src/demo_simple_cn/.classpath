@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jcommon-1.0.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jdom.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="lib/Communication.jar"/>
+	<classpathentry kind="lib" path="lib/IRP1.jar"/>
+	<classpathentry kind="lib" path="lib/RFIDInterface.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/tank/workspace/demo_simple_src/demo_simple_cn/lib/jaxen.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

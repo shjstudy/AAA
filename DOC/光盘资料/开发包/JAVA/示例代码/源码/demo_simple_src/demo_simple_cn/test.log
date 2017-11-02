@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ConnType: TCP/USB/RS232-->
+<TestLog>
+  <Pick PickName="three" MarkTime="20120308031023" Protocol="IRP1" TimeMill="1331190623250">
+    <ConnType Value="RS232">
+      <OpenPower>1</OpenPower>
+      <ClosePower>1</ClosePower>
+      <Antenna1>-1</Antenna1>
+      <Antenna2>-1</Antenna2>
+      <Antenna3>0</Antenna3>
+      <Antenna4>0</Antenna4>
+      <Beep>1</Beep>
+      <LED>1</LED>
+      <GPIO>1</GPIO>
+      <Rate>-1</Rate>
+      <Power>0</Power>
+    </ConnType>
+  </Pick>
+  <Pick PickName="fouth" MarkTime="20120308031141" Protocol="IRP1" TimeMill="1331190701187">
+    <ConnType Value="RS232">
+      <OpenPower>1</OpenPower>
+      <ClosePower>1</ClosePower>
+      <Antenna1>-1</Antenna1>
+      <Antenna2>-1</Antenna2>
+      <Antenna3>0</Antenna3>
+      <Antenna4>0</Antenna4>
+      <Beep>1</Beep>
+      <LED>1</LED>
+      <GPIO>1</GPIO>
+      <Rate>-1</Rate>
+      <Power>0</Power>
+    </ConnType>
+  </Pick>
+  <Pick PickName="first" MarkTime="20120308031457" Protocol="IRP1" TimeMill="1331190897093">
+    <ConnType Value="RS232">
+      <OpenPower>1</OpenPower>
+      <ClosePower>1</ClosePower>
+      <Antenna1>-1</Antenna1>
+      <Antenna2>-1</Antenna2>
+      <Antenna3>0</Antenna3>
+      <Antenna4>0</Antenna4>
+      <Beep>1</Beep>
+      <LED>1</LED>
+      <GPIO>1</GPIO>
+      <Rate>-1</Rate>
+      <Power>0</Power>
+    </ConnType>
+  </Pick>
+</TestLog>
+

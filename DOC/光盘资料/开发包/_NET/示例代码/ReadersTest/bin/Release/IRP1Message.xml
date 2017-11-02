@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IRP1Message>
+  <Message Name="TagOperationQuery_6C" Type="64"/>
+  <Message Name="TagOperationConfig_6C" Type="65"/>
+  <Message Name="QT_6C" Type="96"/>
+  <Message Name="FastReadTIDConfig_EpcLength" Type="AC"/>
+  <Message Name="FastReadTIDConfig_6C" Type="AD"/>
+  <Message Name="ReadUnfixedTidConfig_6C" Type="EA"/>
+  <Message Name="FixedTidLengthConfig_6C" Type="EB"/>
+  <Message Name="ReadTagConfig_6C" Type="F4"/>
+  <Message Name="ReadTagConfig_6B" Type="F5"/>
+  <Message Name="IDFilter_6B" Type="A3"/>
+  <Message Name="EasConfig_6C" Type="8C"/>
+  <Message Name="EpcFilter_6C" Type="8E"/>
+  <Message Name="FilterByTime_6C" Type="8F"/>
+
+  <Message Name="ReadTag" Type="00">
+    <Item Name="EPC_6C" Type="81"/>
+    <Item Name="TID_6C" Type="82"/>
+    <Item Name="EPC_TID_UserData_6C" Type="90"/>
+    <Item Name="EPC_TID_UserData_6C_2" Type="97"/>
+    <Item Name="ID_6B" Type="43"/>
+    <Item Name="ID_UserData_6B" Type="AE"/>
+    <Item Name="EPC_6C_ID_6B" Type="31"/>
+    <Item Name="TID_6C_ID_6B" Type="30"/>
+    <Item Name="EPC_TID_UserData_6C_ID_UserData_6B" Type="32"/>
+    <Item Name="EPC_TID_UserData_Reserved_6C_ID_UserData_6B" Type="F0"/>
+    <Item Name="EPC_PC_6C" Type="91"/>
+  </Message>
+  <Message Name="EasAlarm_6C" Type="8D"/>
+
+  <Message Name="RXD_EPC_6C" Type="81"/>
+  <Message Name="RXD_ID_6B" Type="43"/>
+  <Message Name="RXD_TID_6C" Type="82"/>
+  <Message Name="RXD_TID_6C_2" Type="D8"/>
+  <Message Name="RXD_EPC_TID_UserData_6C" Type="90"/>
+  <Message Name="FrequencyTableConfig_F6B" Type="9001"/>
+  <Message Name="FrequencyTableReset_F6B" Type="1F"/>
+  <Message Name="RXD_EPC_TID_UserData_6C_2" Type="97"/>
+  <Message Name="RXD_EPC_TID_UserData_Reserved_6C" Type="F1"/>
+  <Message Name="RXD_ID_UserData_6B" Type="AE"/>
+  <Message Name="RXD_ID_UserData_6B_2" Type="F2"/>
+  <Message Name="RXD_EPC_PC_6C" Type="91"/>
+
+  <Message Name="SelectTag_6C" Type="80"/>
+  <Message Name="WriteTag_6C" Type="99"/>
+  <Message Name="WriteEpc" Type="83"/>
+  <Message Name="ReadUserData_6C" Type="84"/>
+  <Message Name="WriteUserData_6C" Type="85"/>
+  <Message Name="BlockWrite_6C" Type="86"/>
+  <Message Name="BlockErase_6C" Type="87"/>
+  <Message Name="AccessPwdConfig_6C" Type="88"/>
+  <Message Name="KillPwdConfig_6C" Type="89"/>
+  <Message Name="LockMemoryBank_6C" Type="8A"/>
+  <Message Name="BlockPermalock_6C" Type="98"/>
+  <Message Name="KillTag_6C" Type="8B"/>
+  <Message Name="GetTagAccessPwd_6C" Type="92"/>
+  <Message Name="GetTagKillPwd_6C" Type="93"/>
+
+  <Message Name="ReadUserData_6B" Type="44"/>
+  <Message Name="WriteUserData_6B" Type="45"/>
+  <Message Name="ReadUserData2_6B" Type="4B"/>
+  <Message Name="WriteUserData2_6B" Type="4C"/>
+  <Message Name="LockUserData_6B" Type="40"/>
+  <Message Name="LockStateQuery_6B" Type="4E"/>
+
+  <Message Name="PowerOn_800" Type="60"/>
+  <Message Name="PowerOff_800" Type="61"/>
+  <Message Name="SysQuery_800" Type="62"/>
+  <Message Name="SysConfig_800" Type="63"/>
+
+  <Message Name="Gpo_800" Type="D1"/>
+  <Message Name="Gpi_800" Type="D2"/>
+  <Message Name="RXD_IOTriggerSignal_800" Type="E4"/>
+  <Message Name="TestModeConfig_800" Type="67"/>
+  <Message Name="FirmwareUpgrade_800" Type="6B"/>
+  <Message Name="ResetReader_800" Type="6C"/>
+  <Message Name="SysCheck_800" Type="66"/>
+  <Message Name="Keepalive" Type="E5"/>
+
+  <Message Name="PowerOn_500" Type="41"/>
+  <Message Name="PowerOff_500" Type="42"/>
+  <Message Name="SysQuery_500" Type="46"/>
+  <Message Name="SysConfig_500" Type="47"/>
+  <Message Name="FreqConfig_500" Type="0910"/>
+  <Message Name="FreqQuery_500" Type="0911"/>
+  <Message Name="BaudRateMode_500" Type="4F"/>
+  <Message Name="WorkModeSet_500" Type="A0"/>
+  <Message Name="EnableDhcp_500" Type="D001"/>
+  <Message Name="DisableDhcp_500" Type="D101"/>
+  <Message Name="QueryDhcp_500" Type="D201"/>
+
+  <Message Name="RssiLimitConfig_500" Type="A1"/>
+  <Message Name="Buzzer_500" Type="A2"/>
+  <Message Name="TemperatureAndHumidityQuery_500" Type="A4"/>
+  <Message Name="AntennaInspect_500" Type="A5"/>
+  <Message Name="IODevices_500" Type="A6"/>
+  <Message Name="IODevices_502C" Type="4D"/>
+  <Message Name="DataSentTime_500" Type="B3"/>
+  <Message Name="RelayStartState_500" Type="B4"/>
+  <Message Name="PowerParamConfig_500" Type="E8"/>
+  <Message Name="ResetToFactoryDefault_500" Type="E9"/>
+  <Message Name="DataSentMode_500" Type="B5"/>
+  <Message Name="WhiteList_500" Type="B0"/>
+  <Message Name="WhiteListDownLoad_500" Type="B1"/>
+  <Message Name="WhiteListQuery_500" Type="B2"/>
+  <Message Name="StartReaderAndReading_500" Type="CA"/>
+  <Message Name="WiegandMode_500" Type="CB"/>
+  <Message Name="ReadModeTrigger_500" Type="CC"/>
+  <Message Name="ServerClientConfig_500" Type="D3"/>
+  <Message Name="ServerClientQuery_500" Type="D4"/>
+  <Message Name="PcIpsConfig_500" Type="D501"/>
+  <Message Name="PcIpsQuery_500" Type="D6"/>
+  <Message Name="PcSendTime_500" Type="D7"/>
+  <Message Name="TagUpInterval_500" Type="DA01"/>
+  <Message Name="ReaderInterval_500" Type="DB"/>
+
+  <Message Name="ResetReader_500" Type="48"/>
+</IRP1Message>

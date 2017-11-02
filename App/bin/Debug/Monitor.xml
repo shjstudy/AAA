@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Servers>
+    <Server Name="CranePLC01" ConnectionString="OPC.SimaticNET" GroupName="PLCGroup" GroupString="S7:[CranePLC01]" UpdateRate="350">
+      <OPCItem ItemName="Station" ClientHandler="1"  OPCItemName="DB541,INT12,2" />
+      <OPCItem ItemName="Mode" ClientHandler="2" OPCItemName="DB541,INT4,1"  />
+      <OPCItem ItemName="State1" ClientHandler="3" OPCItemName="DB541,INT46,1" />
+      <OPCItem ItemName="Fork1"  ClientHandler="4" OPCItemName="DB541,INT16,1" />
+      <OPCItem ItemName="TaskNo1" ClientHandler="5"  OPCItemName="DB541,CHAR62,20" />
+      <OPCItem ItemName="AlarmCode" ClientHandler="9" OPCItemName="DB541,INT60,1" />
+    </Server>
+    <Server Name="Convey" ConnectionString="OPC.SimaticNET" GroupName="PLCGroup" GroupString="S7:[PLCConvey]" UpdateRate="350">
+      <OPCItem ItemName="100_TaskNo" ClientHandler="1" OPCItemName="DB1,W50,3" />
+      <OPCItem ItemName="100_PalletCode" ClientHandler="2" OPCItemName="DB1,W72,1" />
+
+      <OPCItem ItemName="101_TaskNo" ClientHandler="15" OPCItemName="DB1,W150,3" />
+      <OPCItem ItemName="101_PalletCode" ClientHandler="16" OPCItemName="DB1,W172,1"  />
+
+      <OPCItem ItemName="102_TaskNo" ClientHandler="25" OPCItemName="DB1,W250,3"  />
+      <OPCItem ItemName="102_PalletCode" ClientHandler="26" OPCItemName="DB1,W272,1" />
+
+      <OPCItem ItemName="103_TaskNo" ClientHandler="35" OPCItemName="DB1,W350,3" />
+      <OPCItem ItemName="103_PalletCode" ClientHandler="36" OPCItemName="DB1,W372,1"/>
+    </Server>
+     
+  </Servers>
+</Configuration>

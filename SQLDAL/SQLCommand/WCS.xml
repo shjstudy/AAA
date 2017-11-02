@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlCommand>
+  <!--任务信息-->
+  <Command ID="SelectTask">
+    <CommandString>
+      SELECT  WCS_TASK.*,product.CategoryCode,Product.Spec,Product.ProductName,Newproduct.CategoryCode as NewCategoryCode,NewProduct.Spec as NewSpec,billtypename,statedesc,cellName,
+      case when WCS_TASK.TaskType='11' or (wcs_task.TaskType='14' and WCS_TASK.State in ('1','2','3','8')) then Aisle.StationNoAddress2 when wcs_task.TaskType IN('12','15') OR (wcs_task.TaskType='14' and WCS_TASK.State in ('0','4','5','6','10')) then WCS_TASK.CellCode end as FromStation,
+      case when WCS_TASK.TaskType='11' or (wcs_task.TaskType='14' and WCS_TASK.State in ('1','2','3','8')) then WCS_TASK.CellCode when wcs_task.TaskType IN('12','15') OR (wcs_task.TaskType='14' and WCS_TASK.State in ('0','4','5','6','10')) then Aisle.StationNoAddress3  end as ToStation,
+      case when WCS_TASK.TaskType='11' or (wcs_task.TaskType='14' and WCS_TASK.State in ('1','2','3','8')) then Aisle.StationNo1 when wcs_task.TaskType IN('12','15') OR  (wcs_task.TaskType='14' and WCS_TASK.State in ('0','4','5','6','10')) then Aisle.StationNo3 end as ConveyFromStation,
+      case when WCS_TASK.TaskType='11' or (wcs_task.TaskType='14' and WCS_TASK.State in ('1','2','3','8')) then Aisle.StationNo2 when wcs_task.TaskType IN('12','15') OR  (wcs_task.TaskType='14' and WCS_TASK.State in ('0','4','5','6','10')) then Aisle.StationNo4  end as ConveyToStation
+      FROM WCS_TASk
+      left join CMD_Cell Cell on WCS_TASK.CellCode=cell.CellCode
+      left join CMD_Shelf Shelf on cell.ShelfCode=Shelf.ShelfCode
+      left join CMD_Aisle Aisle on Shelf.AisleNo=Aisle.AisleNo
+      left join VCMD_Product Product on WCS_TASK.ProductCode=product.ProductCode
+      left join VCMD_Product NewProduct on wcs_task.NewProductCode=NewProduct.ProductCode
+      left join CMD_BillType On CMD_BillType.BillTypeCode=WCS_TASK.BillTypeCode
+      left join Sys_TableState on Sys_TableState.TableName='WCS_TASK' and Sys_TableState.FieldName='State' and WCS_TASK.State=Sys_TableState.State
+      Where {0}
+      ORDER BY WCS_TASK.TaskLevel,WCS_TASK.RequestDate,WCS_TASK.StartDate,WCS_TASK.TaskNo
+    </CommandString>
+  </Command>
+  
+  <Command ID="SelectDevice">
+    <CommandString>
+      select * from CMD_Device
+      where {0}
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectDeviceAlarm">
+    <CommandString>
+      select * from Sys_DeviceAlarm
+      where {0}
+      order by AlarmCode
+    </CommandString>
+  </Command>
+  
+
+  <Command ID="UpdateTaskState">
+    <CommandString>
+      update WCS_TASK set {0} where {1}
+    </CommandString>
+  </Command>
+ 
+  <Command ID="SelectCell">
+    <CommandString>
+      SELECT  CMD_Cell.*, CMD_Area.AreaName, CMD_Shelf.ShelfName, CMD_Shelf.Columns, CMD_Shelf.Rows,VCmd_Product.ProductName,VCmd_Product.Unit
+      FROM CMD_Cell
+      LEFT OUTER JOIN CMD_Area ON CMD_Cell.AreaCode = CMD_Area.AreaCode
+      LEFT OUTER JOIN CMD_Shelf ON CMD_Cell.ShelfCode = CMD_Shelf.ShelfCode
+      left join VCmd_Product on cmd_cell.ProductCode=VCmd_Product.ProductCode
+      order by CMD_Cell.CellCode
+    </CommandString>
+  </Command>
+  <Command ID="SelectCellByFilter">
+    <CommandString>
+      SELECT CMD_Cell.* FROM CMD_Cell
+      LEFT OUTER JOIN CMD_Shelf ON CMD_Cell.ShelfCode = CMD_Shelf.ShelfCode
+      Where {0} order by CMD_Cell.CellCode
+    </CommandString>
+  </Command>
+  <Command ID="Sp_TaskProcess">
+    <CommandString>
+      Sp_TaskProcess
+    </CommandString>
+  </Command>
+  <Command ID="UpdateCellByFilter">
+    <CommandString>
+      update CMD_Cell Set {0} where {1}
+    </CommandString>
+  </Command>
+  <Command ID="Sp_ImportWmsRequest">
+    <CommandString>
+      Sp_ImportWmsRequest
+    </CommandString>
+  </Command>
+   
+  <Command ID="UpdateTaskReturnCode">
+    <CommandString>
+      update WCS_Task set FinishReturnCode=@ReturnCode where TaskNo=@TaskNo
+    </CommandString>
+  </Command>
+
+  <Command ID="InsertAGVTask">
+    <CommandString>
+      Insert into A (id,from_station,to_station,call_type,call_from,status,priority,create_date)
+      values(NEWID(),@from_station,@to_station,2,@TaskNo,0,1,getdate())
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectAGVTask">
+    <CommandString>
+      select * from A 
+      where {0}
+      order by id desc
+    </CommandString>
+  </Command>
+  
+</SqlCommand>

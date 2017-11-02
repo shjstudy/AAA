@@ -1,0 +1,38 @@
+﻿<?xml version='1.0' ?>
+<Config>
+  <OPCServer ConnectionString="OPC.SimaticNET">
+    <!--<OPCGroup GroupName="PLCGroup" GroupString="S7:[@LOCALSERVER]" UpdateRate="350">-->
+    <OPCGroup GroupName="PLCGroup" GroupString="S7:[PLC01]" UpdateRate="350">
+      <!--握手信号-->
+      <OPCItem ItemName="ReadHandShake" ClientHandler="1" OPCItemName="DB541,X0.0,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="CraneTaskFinished" ClientHandler="2" OPCItemName="DB541,X1.2,1" ItemType="READ" IsActive="true"/>
+      
+      <!--<OPCItem ItemName="InRequest1" ClientHandler="3" OPCItemName="DB541,X1.5,1" ItemType="READ" IsActive="true"/>
+      <OPCItem ItemName="InRequest2" ClientHandler="4" OPCItemName="DB541,X1.6,1" ItemType="READ" IsActive="true"/>
+      <OPCItem ItemName="InRequest3" ClientHandler="5" OPCItemName="DB541,X1.7,1" ItemType="READ" IsActive="true"/>-->
+      <!--堆垛机运行模式-->
+      <OPCItem ItemName="CraneMode" ClientHandler="6" OPCItemName="DB541,X0.7,1"  ItemType="READ" IsActive="false"/>
+      <!--堆垛机报警代码、位置-->
+      <OPCItem ItemName="CraneAlarmCode" ClientHandler="7" OPCItemName="DB541,INT6,5"  ItemType="READ" IsActive="true"/>
+      <!--堆垛机负载-->
+      <OPCItem ItemName="CraneLoad" ClientHandler="8" OPCItemName="DB541,X1.3,1"  ItemType="READ" IsActive="false"/>
+      <!--堆垛机货叉-->
+      <OPCItem ItemName="CraneFork" ClientHandler="9" OPCItemName="DB541,X1.4,1"  ItemType="READ" IsActive="false"/>
+      <!--任务号-->
+      <OPCItem ItemName="CraneTaskNo" ClientHandler="11" OPCItemName="DB541,CHAR20,10"  ItemType="READ" IsActive="false"/>
+      <!--站台有无货-->
+      <OPCItem ItemName="StationLoad01" ClientHandler="12" OPCItemName="DB541,X0.1,1"  ItemType="READ" IsActive="false"/>
+      
+
+      <!--握手信号-->
+      <OPCItem ItemName="HandShake" ClientHandler="15" OPCItemName="DB540,INT0,1"  ItemType="WRITE"/>
+
+      <!--任务类型、起始地址、目标地址-->
+      <OPCItem ItemName="TaskAddress" ClientHandler="16" OPCItemName="DB540,INT2,9"  ItemType="WRITE"/>
+      <!--任务号-->
+      <OPCItem ItemName="TaskNo" ClientHandler="17" OPCItemName="DB540,CHAR26,10"  ItemType="WRITE"/>
+      <!--任务标识-->
+      <OPCItem ItemName="WriteFinished" ClientHandler="18" OPCItemName="DB540,INT22,1"  ItemType="WRITE"/>
+    </OPCGroup>
+  </OPCServer>
+</Config>

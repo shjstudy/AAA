@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <LogLevel>DEBUG</LogLevel>
+  <Attributes>
+    <Attribute Name="UserName" Value="Admin" Description="默认登录用户名" />
+    <Attribute Name="WcsUrl" Value="http://106.14.196.176:8082/api/storage/" Description="MES服务器IP" />
+    <Attribute Name="SendInterval" Value="60000" Description="上报时间间隔" />
+    <Attribute Name="RFIDConnetIP" Value="192.168.0.210:7086" Description="RFID连接地址" />
+    <Attribute Name="Antenna" Value="131" Description="RFID天线" />
+    <Attribute Name="Q" Value="5" Description="RFID Q值" />
+    <Attribute Name="IsLoop" Value="1" Description="RFID 读值方式" />
+    <Attribute Name="isTryReconnNet" Value="1" Description="重新连接" />
+    <Attribute Name="tryReconnNetTimeSpan" Value="0" Description="重新连接间隔" />
+  </Attributes>
+  <Services>
+    <Service Name="Convey" Type="MCP.Service.Siemens.dll, MCP.Service.Siemens.OPCService" ConfigFile="Convey.xml" />
+    <Service Name="CranePLC01" Type="MCP.Service.Siemens.dll, MCP.Service.Siemens.OPCService" ConfigFile="CranePLC01.xml" />
+  </Services>
+  <Processes>
+    <Process Name="CraneProcess" Type="App.exe, App.Dispatching.Process.CraneProcess">
+      <Item ServiceName="CranePLC01" ItemName="CraneTaskFinished" />
+      <Item ServiceName="CranePLC01" ItemName="CraneAlarmCode" />
+      <Item ServiceName="CranePLC01" ItemName="PLCCheck" />
+    </Process>
+    <Process Name="InStockToStationProcess" Type="App.exe, App.Dispatching.Process.InStockToStationProcess">
+      <Item ServiceName="Convey" ItemName="101_TaskNo" />
+    </Process>
+    <Process Name="OutStockFinishProcess" Type="App.exe, App.Dispatching.Process.OutStockFinishProcess">
+      <Item ServiceName="Convey" ItemName="103_TaskNo" />
+    </Process>
+  </Processes>
+</Configuration>

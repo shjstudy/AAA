@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IRP1Message>
+  <Message Name="ReadTag">
+    <Item Param="[ReadMemoryBank]EPC_6C;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]TID_6C;[String]800;[Boolean]true"/>
+    <!--<Item Param="[ReadMemoryBank]EPC_TID_UserData_6C;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]EPC_TID_UserData_6C_2;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]ID_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]ID_UserData_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]EPC_6C_ID_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]TID_6C_ID_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]EPC_TID_UserData_6C_ID_UserData_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]EPC_TID_UserData_Reserved_6C_ID_UserData_6B;[String]800;[Boolean]true"/>
+    <Item Param="[ReadMemoryBank]EPC_PC_6C;[String]800;[Boolean]true"/>-->
+  </Message>
+  <Message Name="EpcFilter_6C">
+    <Item Param="[Byte]0;[Byte[]]01,02,03,04,05,06,07,08,09,00,01,02;[Byte[]]00,00,00,00,00,00,00,00,00,00,00,00"/>
+    <Item Param="[Byte]1;null;null"/>
+  </Message>
+  <Message Name="IDFilter_6B">
+    <Item Param="[Byte[]]01,02,03,04,05,06,07,08;[Byte[]]ff,ff,ff,ff,ff,ff,ff,ff"/>
+  </Message>
+  <Message Name="FilterByTime_6C">
+    <Item Param="[Byte]0;[Byte[]]00,00"/>
+    <Item Param="[Byte]1;null"/>
+  </Message>
+  <Message Name="EasConfig_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]0"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]0;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="QT_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte]0;[Byte[]]00,00"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]0;[Byte]0;[Byte[]]00,00"/>
+  </Message>
+  <Message Name="SelectTag_6C">
+    <Item Param="[Byte]2;[UInt32]0;[Byte]64;[Byte[]]e2,00,60,01,01,1d,69,22"/>
+  </Message>
+  <Message Name="WriteTag_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[UInt32]2;[Byte]6;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte]6;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[UInt32]2;[Byte]6;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte]6;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="WriteEpc">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="ReadUserData_6C">
+    <Item Param="[Byte]1;[UInt32]0;[Byte]6"/>
+    <Item Param="[Byte]1;[UInt32]0;[Byte]6;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="WriteUserData_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[UInt32]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[UInt32]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="BlockWrite_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="BlockErase_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte]2;[Byte]1"/>
+    <!--<Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]3;[UInt32]0;[Byte]2;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>-->
+  </Message>
+  <Message Name="LockMemoryBank_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte]0"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte]0;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="BlockPermalock_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte]0;[UInt32]0;[Byte]1;[Byte]1;[Byte[]]0,0"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte]1;[Byte]0;[UInt32]0;[Byte]1;[Byte]1;[Byte[]]0,0;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="KillTag_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]00,05,08,08"/>
+  </Message>
+  <Message Name="AccessPwdConfig_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]00,00,00,00"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]00,00,00,00;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="KillPwdConfig_6C">
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]00,00,00,00"/>
+    <Item Param="[Byte]1;[Byte[]]00,00,00,00;[Byte[]]00,00,00,00;[Byte[]]e2,00,60,01,01,1d,69,22;[MemoryBank]TIDMemory"/>
+  </Message>
+  <Message Name="ReadUserData_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,dc,cd,6c,01;[Byte]0;[Byte]6"/>
+  </Message>
+  <Message Name="ReadUserData2_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,dc,cd,6c,01;[Byte]0;[Byte]6"/>
+  </Message>
+  <Message Name="WriteUserData_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,dc,cd,6c,01;[Byte]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+  </Message>
+  <Message Name="WriteUserData2_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,dc,cd,6c,01;[Byte]0;[Byte[]]01,02,03,04,05,06,07,08,09,10,11,12"/>
+  </Message>
+  <Message Name="LockUserData_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,f7,ab,4e,01;[Byte[]]DF"/>
+  </Message>
+  <Message Name="LockStateQuery_6B">
+    <Item Param="[Byte]1;[Byte[]]e0,04,00,00,f7,ab,4e,01;[Byte[]]DF"/>
+  </Message>
+  <Message Name="PowerOff_800">
+    <Item />
+  </Message>
+  <Message Name="SysQuery_800">
+    <Item Param="[Byte]2"/>
+    <Item Param="[Byte]3"/>
+    <Item Param="[Byte]5"/>
+    <Item Param="[Byte]6"/>
+    <Item Param="[Byte]7"/>
+    <Item Param="[Byte]10"/>
+    <Item Param="[Byte]11"/>
+    <Item Param="[Byte]12"/>
+    <Item Param="[Byte]14"/>
+    <Item Param="[Byte]15"/>
+    <Item Param="[Byte]16"/>
+    <Item Param="[Byte]17"/>
+    <Item Param="[Byte]18"/>
+    <Item Param="[Byte]1A"/>
+    <Item Param="[Byte]1E"/>
+    <Item Param="[Byte]20"/>
+    <Item Param="[Byte]21"/>
+    <Item Param="[Byte]22"/>
+    <Item Param="[Byte]23"/>
+    <Item Param="[Byte]24"/>
+    <Item Param="[Byte]25"/>
+    <Item Param="[Byte]26"/>
+    <Item Param="[Byte]E2;null"/>
+  </Message>
+  <Message Name="SysConfig_800">
+    <Item Param="[Byte]2;[Byte[]]01"/>
+    <Item Param="[Byte]3;[Byte[]]00,00"/>
+    <Item Param="[Byte]6;[Byte[]]C0,A8,00,D2,FF,FF,FF,00,C0,A8,00,03"/>
+    <Item Param="[Byte]10;[Byte[]]00,00,00,01,10,12"/>
+    <Item Param="[Byte]11;[Byte[]]01"/>
+    <Item Param="[Byte]12;[Byte[]]01"/>
+    <Item Param="[Byte]14;[Byte[]]01"/>
+    <Item Param="[Byte]15;[Byte[]]01"/>
+    <Item Param="[Byte]16;[Byte[]]00"/>
+    <Item Param="[Byte]17;[Byte[]]00"/>
+    <Item Param="[Byte]18;[Byte[]]00"/>
+    <Item Param="[Byte]1A;[Byte[]]00"/>
+    <Item Param="[Byte]1E;[Byte[]]00,01,00"/>
+    <Item Param="[Byte]E2;[Byte[]]00,00,00,00,00,00,00,00"/>
+  </Message>
+  <Message Name="Gpo_800">
+    <Item Param="[Byte]0;[Byte]0"/>
+  </Message>
+  <Message Name="Gpi_800">
+    <Item />
+  </Message>
+  <Message Name="PowerOff_500">
+    <Item />
+  </Message>
+  <Message Name="SysQuery_500">
+    <Item Param="[Byte]0;[Byte]C"/>
+    <Item Param="[Byte]1;[Byte]1E"/>
+    <Item Param="[Byte]2;[Byte]1"/>
+    <Item Param="[Byte]3;[Byte]1"/>
+    <Item Param="[Byte]4;[Byte]6"/>
+    <Item Param="[Byte]5;[Byte]8"/>
+    <Item Param="[Byte]6;[Byte]1"/>
+  </Message>
+  <Message Name="SysConfig_500">
+    <Item Param="[Byte]0;[Byte]C;[Byte[]]C0,A8,00,D2,FF,FF,FF,00,C0,A8,00,03"/>
+    <Item Param="[Byte]1;[Byte]1E;[Byte[]]00,FF"/>
+    <Item Param="[Byte]2;[Byte]1;[Byte[]]01"/>
+    <Item Param="[Byte]6;[Byte]1;[Byte[]]00"/>
+  </Message>
+  <Message Name="RssiLimitConfig_500">
+    <Item Param="[Byte]0;[Byte[]]00,00"/>
+    <Item Param="[Byte]1;null"/>
+  </Message>
+  <Message Name="Buzzer_500">
+    <Item Param="[Byte]0"/>
+    <Item Param="[Byte]1"/>
+  </Message>
+  <Message Name="TemperatureAndHumidityQuery_500">
+    <Item Param="[Byte]0"/>
+    <Item Param="[Byte]1"/>
+  </Message>
+  <Message Name="IODevices_500">
+    <Item Param="[Byte]10;[Byte]1"/>
+    <Item Param="[Byte]10;[Byte]0"/>
+  </Message>
+</IRP1Message>

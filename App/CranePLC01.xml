@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' ?>
+<Config>
+  <OPCServer ConnectionString="OPC.SimaticNET">
+    <OPCGroup GroupName="PLCGroup" GroupString="S7:[CranePLC01]" UpdateRate="350">
+      <!--握手信号-->
+      <OPCItem ItemName="ReadHandShake" ClientHandler="1" OPCItemName="DB541,X0.0,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="CraneTaskFinished" ClientHandler="2" OPCItemName="DB541,INT40,1" ItemType="READ" IsActive="true"/>
+      
+      <OPCItem ItemName="CraneMode" ClientHandler="6" OPCItemName="DB541,INT4,1"  ItemType="READ" IsActive="false"/>
+      <!--堆垛机狀態-->
+      <OPCItem ItemName="CraneState" ClientHandler="7" OPCItemName="DB541,INT46,1"  ItemType="READ" IsActive="false"/>
+      <!--堆垛机负载-->
+      <OPCItem ItemName="CraneLoad" ClientHandler="8" OPCItemName="DB541,INT8,1"  ItemType="READ" IsActive="false"/>
+      <!--堆垛机货叉-->
+      <OPCItem ItemName="CraneFork" ClientHandler="9" OPCItemName="DB541,INT16,1"  ItemType="READ" IsActive="false"/>
+      <!--任务号-->
+      <OPCItem ItemName="CraneTaskNo" ClientHandler="11" OPCItemName="DB541,CHAR62,20"  ItemType="READ" IsActive="false"/>
+      <!--堆垛機位置-->
+      <OPCItem ItemName="CraneStation" ClientHandler="12" OPCItemName="DB541,INT12,2"  ItemType="READ" IsActive="false"/>
+
+      <OPCItem ItemName="CraneAlarmCode" ClientHandler="13" OPCItemName="DB541,INT60,1"  ItemType="READ" IsActive="true"/>
+
+      <!--握手信号-->
+      <OPCItem ItemName="HandShake" ClientHandler="15" OPCItemName="DB540,INT0,1"  ItemType="WRITE"/>
+      <!--起始地址、目标地址-->
+      <OPCItem ItemName="TaskAddress" ClientHandler="16" OPCItemName="DB540,INT8,6"  ItemType="WRITE"/>
+      <!--任务号-->
+      <OPCItem ItemName="TaskNo" ClientHandler="17" OPCItemName="DB540,CHAR54,20"  ItemType="WRITE"/>
+      <!--任务類型 0:不動作,1:搬運,2:貨位有貨重入新貨位 3:移動,4:召回,5:取消任務-->
+      <OPCItem ItemName="TaskType" ClientHandler="18" OPCItemName="DB540,INT20,1"  ItemType="WRITE"/>
+      
+      <OPCItem ItemName="WriteFinished" ClientHandler="21" OPCItemName="DB540,INT50,1"  ItemType="WRITE"/>
+      
+      <OPCItem ItemName="PLCCheck" ClientHandler="22" OPCItemName="DB540,INT52,1"  ItemType="READ" IsActive="true"/>
+      <!--解警-->
+      <OPCItem ItemName="Reset" ClientHandler="30" OPCItemName="DB540,INT42,1"  ItemType="WRITE"/>
+      <!--急停-->
+      <OPCItem ItemName="Stop" ClientHandler="40" OPCItemName="DB540,INT40,1"  ItemType="WRITE"/>
+      
+    </OPCGroup>
+  </OPCServer>
+</Config>

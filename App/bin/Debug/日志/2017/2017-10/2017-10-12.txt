@@ -1,0 +1,29 @@
+2017/10/12 19:34:18 [ERROR]2017/10/12 19:34:18初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 19:36:46 [ERROR]2017/10/12 19:36:46初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 19:49:05 [ERROR]2017/10/12 19:49:05初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 19:49:36 [INFO]2017/10/12 19:49:36退出系统 
+2017/10/12 19:53:40 [ERROR]2017/10/12 19:53:40初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:18:12 [ERROR]2017/10/12 20:18:12初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:21:15 [ERROR]2017/10/12 20:21:15初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:22:05 [INFO]2017/10/12 20:22:05退出系统 
+2017/10/12 20:22:32 [ERROR]2017/10/12 20:22:32初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:22:54 [ERROR]2017/10/12 20:22:54现有库存数量小于出库数量，不能出库! 
+2017/10/12 20:23:02 [ERROR]2017/10/12 20:23:02现有库存数量小于出库数量，不能出库! 
+2017/10/12 20:24:20 [ERROR]2017/10/12 20:24:20初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:24:32 [ERROR]2017/10/12 20:24:32现有库存数量小于出库数量，不能出库! 
+2017/10/12 20:27:15 [ERROR]2017/10/12 20:27:15初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:28:38 [ERROR]2017/10/12 20:28:38现有库存数量小于出库数量，不能出库! 
+2017/10/12 20:29:38 [ERROR]2017/10/12 20:29:38初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:29:44 [INFO]2017/10/12 20:29:44退出系统 
+2017/10/12 20:30:49 [ERROR]2017/10/12 20:30:49初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:32:06 [ERROR]2017/10/12 20:32:05初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:33:08 [ERROR]2017/10/12 20:33:08初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 20:33:14 [INFO]2017/10/12 20:33:14删除出库单号：OS1710120001 
+2017/10/12 20:46:29 [INFO]2017/10/12 20:46:29退出系统 
+2017/10/12 20:46:48 [ERROR]2017/10/12 20:46:48初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 21:16:14 [ERROR]2017/10/12 21:16:14初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 21:16:34 [INFO]2017/10/12 21:16:34退出系统 
+2017/10/12 21:17:14 [ERROR]2017/10/12 21:17:14初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 21:17:23 [INFO]2017/10/12 21:17:23退出系统 
+2017/10/12 21:18:13 [ERROR]2017/10/12 21:18:13初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/12 21:18:48 [INFO]2017/10/12 21:18:48退出系统 

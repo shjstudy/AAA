@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Capabilities>
+  <IRP1>
+    <XCRF>
+      <ReaderConfigForm>
+        <pic_A5 Visible ="false"/>
+        <pic_B1 Visible ="false"/>
+        <pic_B2 Visible ="false"/>
+        <pic_B3 Visible ="false"/>
+        <pic_B4 Visible ="false"/>
+        <pic_B5 Visible ="false"/>
+        <pic_B7 Visible ="false"/>
+        <pic_C2 Visible ="false"/>
+        <pic_C3 Visible ="false"/>
+        <pic_D4 Visible ="false"/>
+        <pic_D5 Visible ="false"/>
+        <pic_D6 Visible ="false"/>
+        <lbl_A5 Visible ="false"/>
+        <lbl_B1 Visible ="false"/>
+        <lbl_B2 Visible ="false"/>
+        <lbl_B3 Visible ="false"/>
+        <lbl_B4 Visible ="false"/>
+        <lbl_B5 Visible ="false"/>
+        <lbl_B7 Visible ="false"/>
+        <lbl_C2 Visible ="false"/>
+        <lbl_C3 Visible ="false"/>
+        <lbl_D4 Visible ="false"/>
+        <lbl_D5 Visible ="false"/>
+        <lbl_D6 Visible ="false"/>
+      </ReaderConfigForm>
+    </XCRF>
+    <XCRF800>
+      <ReaderConfigForm>
+        
+      </ReaderConfigForm>
+      <A4_GPIO>
+        <TextBox2 Enabled ="false"/>
+        <TextBox1 Enabled ="false"/>
+      </A4_GPIO>
+    </XCRF800>
+    <XCRF500>
+      <ReaderConfigForm>
+        
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <cb_Eas Visible ="false"/>
+        <cb_Rssi Visible ="false"/>
+        <cb_Utc Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox1 Enabled ="false"/>       
+      </A2_TagFilter>
+    </XCRF500>
+    <!--<XC-RF806>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox1 Enabled ="false"/>
+        <groupBox9 Enabled ="false"/>
+      </A2_TagFilter>      
+    </XC-RF806>
+    <XCRF806>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox1 Enabled ="false"/>
+        <groupBox9 Enabled ="false"/>
+      </A2_TagFilter>
+    </XCRF806>-->
+    <XC-RF807>
+      <MainForm>        
+        <!--<btnLevelUp Visible ="false"/>-->
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="ture"/>
+        <lbl_B4 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+      </A1_ReadTagConfig>      
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox9 Enabled ="false"/>       
+      </B2_Notice>
+    </XC-RF807>
+    <XC-RF507>
+      <MainForm>
+        <!--<btnLevelUp Visible ="false"/>-->
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="ture"/>
+        <lbl_B4 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox9 Enabled ="false"/>
+      </B2_Notice>
+    </XC-RF507>
+    <XCRF807>
+      <MainForm>
+        <!--<btnLevelUp Visible ="false"/>-->
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="ture"/>
+        <lbl_B4 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>        
+      </A1_ReadTagConfig>
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox9 Enabled ="false"/>
+      </B2_Notice>
+    </XCRF807>
+    <XC-RF850>
+      <MainForm>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="ture"/>
+        <lbl_B4 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox6 Enabled ="false"/>
+      </B2_Notice>
+    </XC-RF850>
+    <XC-RF853>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+        <pic_B2 Visible ="ture"/>
+        <lbl_B2 Visible ="ture"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <cb_Utc Visible ="false"/>
+        <cb_Rssi Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+    </XC-RF853>
+    <XC-RF812>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+        <pic_B2 Visible ="ture"/>
+        <lbl_B2 Visible ="ture"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>        
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <cb_Utc Visible ="false"/>
+        <cb_Rssi Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+    </XC-RF812>
+    <!--<XCRF-502E>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B7 Visible ="true"/>
+        <lbl_B7 Visible ="true"/>
+      </ReaderConfigForm>
+      <A0_BaseConfig>
+        <pic_ResetToFactoryDefault Visible ="true"/>
+        <label1 Visible ="true"/>
+        <groupBox6 Visible ="false"/>
+      </A0_BaseConfig>      
+      <A2_TagFilter>
+        <groupBox8 Enabled ="false"/>
+        <groupBox9 Enabled ="false"/>
+      </A2_TagFilter>
+    </XCRF-502E>
+    <XCRF502E>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B7 Visible ="true"/>
+        <lbl_B7 Visible ="true"/>
+      </ReaderConfigForm>
+      <A0_BaseConfig>
+        <pic_ResetToFactoryDefault Visible ="true"/>
+        <label1 Visible ="true"/>
+      </A0_BaseConfig>      
+      <A2_TagFilter>
+        <groupBox8 Enabled ="false"/>
+        <groupBox9 Enabled ="false"/>              
+      </A2_TagFilter>     
+    </XCRF502E>
+    <XCRF-502E-F6G>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B7 Visible ="true"/>
+        <lbl_B7 Visible ="true"/>
+      </ReaderConfigForm>
+      <A0_BaseConfig>
+        <pic_ResetToFactoryDefault Visible ="true"/>
+        <label1 Visible ="true"/>
+      </A0_BaseConfig>
+      <A1_ReadTagConfig>
+        <cb_Eas Visible ="true"/>
+        <groupBox6 Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox8 Enabled ="true"/>
+      </A2_TagFilter>
+    </XCRF-502E-F6G>-->
+    <XC-RF811>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>              
+      </ReaderConfigForm>
+      <A0_BaseConfig>
+        <pic_ResetToFactoryDefault Visible ="true"/>
+        <label1 Visible ="true"/>
+      </A0_BaseConfig>
+      <A1_ReadTagConfig>
+        <cb_Eas Visible ="true"/>
+        <groupBox6 Visible ="false"/>  
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox8 Enabled ="true"/>
+      </A2_TagFilter>
+      <B6_NetComm>
+        <groupBox4 Visible ="false"/>
+        <groupBox5 Visible ="false"/>
+        <groupBox2 Visible ="false"/>        
+      </B6_NetComm>
+    </XC-RF811>
+    <XCRF811>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+      </ReaderConfigForm>
+      <A0_BaseConfig>
+        <pic_ResetToFactoryDefault Visible ="true"/>
+        <label1 Visible ="true"/>        
+      </A0_BaseConfig>
+      <A1_ReadTagConfig>
+        <cb_Eas Visible ="true"/>
+        <groupBox6 Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A2_TagFilter>
+        <groupBox8 Enabled ="true"/>
+      </A2_TagFilter>
+      <B6_NetComm>
+        <groupBox4 Visible ="false"/>
+        <groupBox5 Visible ="false"/>
+        <groupBox2 Visible ="false"/>
+      </B6_NetComm>
+    </XCRF811>
+
+    <XC-RM825>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <!--<btnResetToFactoryDefault Visible ="false"/>-->
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+        <pic_B2 Visible ="ture"/>
+        <lbl_B2 Visible ="ture"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B6 Visible ="false"/>
+        <lbl_B6 Visible ="false"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>        
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+    </XC-RM825>
+    <XC-RF802>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+        <pic_B2 Visible ="ture"/>
+        <lbl_B2 Visible ="ture"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B6 Visible ="false"/>
+        <lbl_B6 Visible ="false"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+    </XC-RF802>
+    <XC-RM829>
+      <MainForm>
+        <btnGPIO Visible ="ture"/>
+        <btnDiagnosis Visible ="false"/>
+        <btnResetToFactoryDefault Visible ="ture"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="ture"/>
+        <lbl_A4 Visible ="ture"/>
+        <pic_B2 Visible ="ture"/>
+        <lbl_B2 Visible ="ture"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+        <pic_B6 Visible ="false"/>
+        <lbl_B6 Visible ="false"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+        <groupBox6 Visible ="false"/>
+        <groupBox10 Visible ="false"/>
+      </A1_ReadTagConfig>
+    </XC-RM829>
+    <XC-RF861>
+      <MainForm>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="ture"/>
+        <lbl_B4 Visible ="ture"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox9 Enabled ="false"/>
+      </B2_Notice>
+    </XC-RF861>
+    <XC-RF503-B>
+      <MainForm>
+        <btnGPIO Visible ="false"/>
+        <btnLevelUp Visible ="false"/>
+      </MainForm>
+      <ReaderConfigForm>
+        <pic_A4 Visible ="false"/>
+        <lbl_A4 Visible ="false"/>
+        <pic_B2 Visible ="true"/>
+        <lbl_B2 Visible ="true"/>
+        <pic_B3 Visible ="ture"/>
+        <lbl_B3 Visible ="ture"/>
+        <pic_B4 Visible ="false"/>
+        <lbl_B4 Visible ="false"/>
+        <pic_B5 Visible ="true"/>
+        <lbl_B5 Visible ="true"/>
+      </ReaderConfigForm>
+      <A1_ReadTagConfig>
+        <p_Antenna Visible ="true"/>
+        <cbAntenna Visible ="false"/>
+      </A1_ReadTagConfig>
+      <A4_GPIO>
+        <TextBox2 Enabled ="true"/>
+        <TextBox1 Enabled ="true"/>
+      </A4_GPIO>
+      <B2_Notice>
+        <groupBox9 Enabled ="false"/>
+      </B2_Notice>
+    </XC-RF503-B>
+  </IRP1>
+</Capabilities>

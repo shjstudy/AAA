@@ -1,0 +1,73 @@
+; Installation inf for the Intel Harve MaC
+;
+; (c) Copyright 1999 Microsoft
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%MSFT%
+DriverVer=08/05/1999
+
+[SourceDisksNames]
+1="UsbHarve Installation Disk",,,
+
+[SourceDisksFiles]
+USBHARVE.sys = 1
+USBHARVE.inf = 1
+
+[Manufacturer]
+%MfgName%=Microsoft
+
+[Microsoft]
+%USB\VID_8086&PID_FEED.DeviceDesc%=USBHARVE.Dev, USB\VID_8086&PID_FEED
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+USBHARVE.Files.Ext = 10,System32\Drivers
+USBHARVE.Files.Inf = 10,INF
+
+[USBHARVE.Dev]
+CopyFiles=USBHARVE.Files.Ext, USBHARVE.Files.Inf
+AddReg=USBHARVE.AddReg
+
+[USBHARVE.Dev.NT]
+CopyFiles=USBHARVE.Files.Ext, USBHARVE.Files.Inf
+AddReg=USBHARVE.AddReg
+
+[USBHARVE.Dev.NT.Services]
+Addservice = USBHARVE, 0x00000002, USBHARVE.AddService
+
+[USBHARVE.AddService]
+DisplayName    = %USBHARVE.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\USBHARVE.sys
+LoadOrderGroup = Base
+
+[USBHARVE.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,USBHARVE.sys
+HKLM,"System\Currentcontrolset\Services\UsbHarve\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\UsbHarve\Parameters","DebugLevel",0x10001,0
+HKLM,"System\Currentcontrolset\services\UsbHarve\Parameters","SuspendEnable",0x10001,0
+
+[USBHARVE.Files.Ext]
+USBHARVE.sys
+
+[USBHARVE.Files.Inf]
+UsbHarve.Inf
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+MSFT="Microsoft"
+MfgName="Intel"
+USB\VID_8086&PID_FEED.DeviceDesc="UsbHarve.Sys for Intel Harve RFID MAC"
+USBHARVE.SvcDesc="UsbHarve.Sys RFID MAC Driver"
+

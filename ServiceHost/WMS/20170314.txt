@@ -1,0 +1,2 @@
+2017/3/14 21:08:04 , transSRMTask--Rec :  1
+2017/3/14 21:08:04 , transSRMTask-Rtn :  [{"id":"","returnCode":"001","message":"无法将类型为“System.Int32”的对象转换为类型“System.Collections.ArrayList”","finishDate":"2017-03-14 21:08:04.546","field1":"无法将类型为“System.Int32”的对象转换为类型“System.Collections.ArrayList”"}]

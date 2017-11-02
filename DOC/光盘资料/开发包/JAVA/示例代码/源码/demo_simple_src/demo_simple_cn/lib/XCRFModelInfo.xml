@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModelInfo>
+  <unknown>
+    <Connection>TCP/IP Client,RS232,USB</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C,EPC_TID_UserData_6C_2,ID_6B,EPC_TID_UserData_Reserved_6C_ID_UserData_6B</Scan>
+      <AntennaNum>4</AntennaNum>
+      <AntennaCtrl>p_Antenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>
+  </unknown>
+  <XC-RF807>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C_2,ID_6B,EPC_TID_UserData_Reserved_6C_ID_UserData_6B</Scan>
+      <AntennaNum>4</AntennaNum>
+      <AntennaCtrl>p_Antenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>    
+  </XC-RF807>
+  <XC-RF850>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C,EPC_TID_UserData_6C_2,ID_6B,EPC_TID_UserData_Reserved_6C_ID_UserData_6B</Scan>
+      <AntennaNum>3</AntennaNum>
+      <AntennaCtrl>p_Antenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>
+  </XC-RF850>
+  <XC-RF806>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C_2</Scan>
+      <AntennaNum>4</AntennaNum>
+      <AntennaCtrl>p_Antenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>
+  </XC-RF806>
+  <XCRF-860>
+    <Connection>TCP/IP Client,RS232,USB</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C</Scan>
+      <AntennaNum>4</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>    
+  </XCRF-860>
+  <XCRMF-803>
+    <Connection>TCP/IP Client,RS232,USB</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>800</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C_2</Scan>
+      <AntennaNum>4</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>800</StopType>
+    </IRP1.0>
+  </XCRMF-803>
+  <XCRF-500D>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>500</ReaderType>
+      <Scan>ID_6B</Scan>
+      <AntennaNum>2</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="false">0</Q>
+      <StopType>500</StopType>
+    </IRP1.0>
+  </XCRF-500D>
+  <XCRF-502C>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>500</ReaderType>
+      <Scan>ID_6B</Scan>
+      <AntennaNum>2</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="false">0</Q>
+      <StopType>500</StopType>
+    </IRP1.0>
+  </XCRF-502C>
+  <XCRF-502E>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>500</ReaderType>
+      <Scan>ID_6B</Scan>
+      <AntennaNum>2</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="false">0</Q>
+      <StopType>500</StopType>
+    </IRP1.0>
+  </XCRF-502E>
+  <XCRF-502E-F6G>
+    <Connection>TCP/IP Client,RS232,TCP/IP Server</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>500</ReaderType>
+      <Scan>EPC_6C,TID_6C,EPC_TID_UserData_6C,ID_6B,EPC_6C_ID_6B,TID_6C_ID_6B,EPC_TID_UserData_6C_ID_UserData_6B,EPC_PC_6C</Scan>
+      <AntennaNum>2</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="true">3</Q>
+      <StopType>500</StopType>
+    </IRP1.0>
+  </XCRF-502E-F6G>
+  <XC-RF811>
+    <Connection>TCP/IP Client,RS232</Connection>
+    <Protocol>IRP1.0</Protocol>
+    <IRP1.0>
+      <ReaderType>500</ReaderType>
+      <Scan>EPC_6C,TID_6C,ID_6B</Scan>
+      <AntennaNum>1</AntennaNum>
+      <AntennaCtrl>cbAntenna</AntennaCtrl>
+      <Q Enabled="false">0</Q>
+      <StopType>500</StopType>
+    </IRP1.0>
+  </XC-RF811>
+</ModelInfo>

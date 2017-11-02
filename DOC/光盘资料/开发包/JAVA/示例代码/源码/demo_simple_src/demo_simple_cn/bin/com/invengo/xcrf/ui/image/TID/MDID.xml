@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MaskDesignerIDAssignment>
+  <Company Name="Impinj">001,801</Company>
+  <Company Name="TexasInstruments">002,802</Company>
+  <Company Name="Alien">003,803</Company>
+  <Company Name="Intelleflex">004,804</Company>
+  <Company Name="Atmel">005,805</Company>
+  <Company Name="NXP">006,806</Company>
+  <Company Name="STMicroelectronics">007,807  ST Microelectronics </Company>
+  <Company Name="EPMicroelectronics">008,808</Company>
+  <Company Name="Motorola">009,809</Company>
+  <Company Name="SentechSndBhd">00A,80A</Company>
+  <Company Name="EMMicroelectronics">00B,80B</Company>
+  <Company Name="Renesas">00C,80C</Company>
+  <Company Name="Mstar">00D,80D</Company>
+  <Company Name="TycoInternational">00E,80E</Company>
+  <Company Name="QuanrayElectronics">00F,80F</Company>
+  <Company Name="Fujitsu">010,810</Company>
+  <Company Name="LSIS">011,811</Company>
+  <Company Name="CAEN">012,812</Company>
+  <Company Name="ProductivityEngineeringGesellschaft">013,813</Company>
+  <Company Name="Federal">014,814</Company>
+  <Company Name="ONSemiconductor">015,815</Company>
+  <Company Name="Ramtron">016,816</Company>
+  <Company Name="Tego">017,817</Company>
+  <Company Name="Ceitec">018,818</Company>
+  <Company Name="CPA">019,819</Company>
+  <Company Name="TransCore">01A,81A</Company>
+  <Company Name="Nationz">01B,81B</Company>
+  <Company Name="Invengo">01C,81C</Company>
+</MaskDesignerIDAssignment>

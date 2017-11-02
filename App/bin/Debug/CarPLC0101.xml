@@ -1,0 +1,28 @@
+﻿<?xml version='1.0' ?>
+<Config>
+  <OPCServer ConnectionString="OPC.SimaticNET">
+    <!--<OPCGroup GroupName="PLCGroup" GroupString="S7:[@LOCALSERVER]" UpdateRate="350">-->
+    <OPCGroup GroupName="PLCGroup" GroupString="S7:[CarPLC0101]" UpdateRate="350">
+      <OPCItem ItemName="ReadHandShake" ClientHandler="1" OPCItemName="DB541,INT0,1"  ItemType="READ" IsActive="false"/>
+      <!--任务完成-->
+      <OPCItem ItemName="TaskFinished" ClientHandler="2" OPCItemName="DB541,DINT100,1" ItemType="READ" IsActive="true"/>
+      <!--小车状态-->
+      <OPCItem ItemName="CarStatus" ClientHandler="3" OPCItemName="DB541,INT2,13"  ItemType="READ" IsActive="false"/>
+      <!--小车当前任务-->
+      <OPCItem ItemName="CarTaskNo" ClientHandler="4" OPCItemName="DB541,DINT28,1"  ItemType="READ" IsActive="false"/>
+      <!--小车状态-->
+      <OPCItem ItemName="CarAlarmCode" ClientHandler="5" OPCItemName="DB541,DINT104,1"  ItemType="READ" IsActive="false"/>
+
+
+      <!--握手信号-->
+      <OPCItem ItemName="HandShake" ClientHandler="15" OPCItemName="DB540,INT0,1"  ItemType="WRITE"/>
+
+      <!--任务类型、起始地址、目标地址-->
+      <OPCItem ItemName="TaskAddress" ClientHandler="16" OPCItemName="DB540,INT2,10"  ItemType="WRITE"/>
+      <!--任务号-->
+      <OPCItem ItemName="TaskNo" ClientHandler="17" OPCItemName="DB540,DINT102,1"  ItemType="WRITE"/>
+      <!--任务标识-->
+      <OPCItem ItemName="WriteFinished" ClientHandler="18" OPCItemName="DB540,INT100,1"  ItemType="WRITE"/>
+    </OPCGroup>
+  </OPCServer>
+</Config>

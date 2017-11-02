@@ -1,0 +1,17 @@
+2017/10/10 19:14:15 [ERROR]2017/10/10 19:14:15初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:14:56 [INFO]2017/10/10 19:14:56退出系统 
+2017/10/10 19:15:47 [ERROR]2017/10/10 19:15:47初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:15:55 [INFO]2017/10/10 19:15:55退出系统 
+2017/10/10 19:16:44 [ERROR]2017/10/10 19:16:44初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:17:39 [INFO]2017/10/10 19:17:39退出系统 
+2017/10/10 19:18:05 [ERROR]2017/10/10 19:18:05初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:18:18 [INFO]2017/10/10 19:18:18退出系统 
+2017/10/10 19:19:27 [ERROR]2017/10/10 19:19:27初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:19:35 [INFO]2017/10/10 19:19:35退出系统 
+2017/10/10 19:19:55 [ERROR]2017/10/10 19:19:55初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 19:20:00 [INFO]2017/10/10 19:20:00退出系统 
+2017/10/10 19:31:38 [ERROR]2017/10/10 19:31:38初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 20:08:06 [INFO]2017/10/10 20:08:06退出系统 
+2017/10/10 20:11:40 [ERROR]2017/10/10 20:11:40初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 22:05:09 [ERROR]2017/10/10 22:05:09初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/10/10 22:05:20 [INFO]2017/10/10 22:05:20退出系统 

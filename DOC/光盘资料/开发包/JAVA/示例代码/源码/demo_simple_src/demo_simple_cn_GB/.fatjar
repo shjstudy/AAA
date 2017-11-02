@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Dec 29 10:56:33 CST 2016
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=807GBDemo.jar
+manifest.mergeall=true
+manifest.mainclass=com.invengo.xcrf.demo.ConnnectDialog
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|IRP1>~invengo/~javaapi/~test/
+includes=

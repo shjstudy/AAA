@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Readers>
+  <TagType>
+    <Tag_6C>
+      <M0>
+        <KillPWD>
+          <Ptr>0</Ptr>
+          <Len>2</Len>
+        </KillPWD>
+        <AccessPWD>
+          <Ptr>2</Ptr>
+          <Len>2</Len>
+        </AccessPWD>
+      </M0>
+      <M1>
+        <CRC>
+          <Ptr>0</Ptr>
+          <Len>1</Len>
+        </CRC>
+        <PC>
+          <Ptr>1</Ptr>
+          <Len>1</Len>
+        </PC>
+        <EPC>
+          <Ptr>2</Ptr>
+          <Len>15</Len>
+        </EPC>
+      </M1>
+      <M2>
+        <Ptr>0</Ptr>
+        <Len>4</Len>
+      </M2>
+      <M3>
+        <Ptr>0</Ptr>
+        <Len>32</Len>
+      </M3>
+    </Tag_6C>
+    <Tag_6B>
+      <ID Len="4" />
+      <Userdata Len="108" />
+    </Tag_6B>
+  </TagType>
+  <ASCII EPC="false" UserData="false" />
+  <LogLevel>Debug</LogLevel>
+  <Reader Name="192.168.1.92" Group="模拟器" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.92:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+      <ReaderType>500</ReaderType>
+    </UserConfig>
+  </Reader>
+  <Server Port="8060" Protocol="IRP1" Enable="true" ReaderType="500" />
+  <Reader Name="COM1-115200" Group="500" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="TID_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+        <ReadTime>1000</ReadTime>
+        <StopTime>1000</StopTime>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Com8-115200" Group="500" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM8,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.232" Group="500" Enable="false">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.232:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="ID_6B" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.213" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.213:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="0">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.120" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.121:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader9" Group="Group1" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.226" Group="500" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.226:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="TID_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.254" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.254:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.210" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.210:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="USB" Group="800系列" Enable="true">
+    <Port Type="USB" Protocol="IRP1">\\?\usb#vid_8086&amp;pid_feed#serialnum01#{48c602d4-c77e-45b9-8133-20c9683bd1a6}</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="0">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader-COM5" Group="800系列" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader10-COM6" Group="Group2" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM6,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="usb11" Group="Group1" Enable="false">
+    <Port Type="USB" Protocol="IRP1">\\?\usb#vid_8086&amp;pid_feed#serialnum01#{48c602d4-c77e-45b9-8133-20c9683bd1a6}</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="usb002" Group="Group1" Enable="true">
+    <Port Type="USB" Protocol="IRP1">\\?\usb#vid_8086&amp;pid_feed#serialnum01#{48c602d4-c77e-45b9-8133-20c9683bd1a6}</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="usb003" Group="Group1" Enable="true">
+    <Port Type="USB" Protocol="IRP1">\\?\usb#vid_8086&amp;pid_feed#serialnum01#{48c602d4-c77e-45b9-8133-20c9683bd1a6}</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_TID_UserData_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader246" Group="800系列" Enable="true" ModelNumber="XC-RF806">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.246:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_TID_UserData_6C_2" Antenna="129" IsLoop="true" TagNum="7">
+        <StopType>800</StopType>
+        <TidLen>6</TidLen>
+        <UserDataPtr_6C>0</UserDataPtr_6C>
+        <UserDataLen_6C>8</UserDataLen_6C>
+        <UserDataPtr_6B>0</UserDataPtr_6B>
+        <UserDataLen_6B>0</UserDataLen_6B>
+        <ReservedLen>0</ReservedLen>
+        <AccessPwd />
+        <ReadTimes_6C>0</ReadTimes_6C>
+        <ReadTimes_6B>0</ReadTimes_6B>
+        <ReadTime>0</ReadTime>
+        <StopTime>0</StopTime>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader223" Group="800系列" Enable="true" ModelNumber="XC-RF811">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.223:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="false" TagNum="0">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader247" Group="800系列" Enable="true" ModelNumber="XC-RF807">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="129" IsLoop="true" TagNum="7">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+</Readers>
+

@@ -1,0 +1,38 @@
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\ReadersTest.exe
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\ReadersTest.pdb
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ResolveAssemblyReference.cache
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.MainForm.resources
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.Properties.Resources.resources
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.exe
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.pdb
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.SysitConfigForm.resources
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\Communication.dll
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\IRP1.dll
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\RFIDInterface.dll
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\Communication.pdb
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\IRP1.pdb
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\RFIDInterface.pdb
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\bin\Release\Sysit.xml
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.TagAccessForm.resources
+F:\tancwork\RFID Demo\RFID Demo\ReadersTest\obj\x86\Release\ReadersTest.ReaderConfigForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\Sysit.xml
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\ReadersTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\ReadersTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\Communication.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\IRP1.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\RFIDInterface.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\Communication.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\IRP1.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\bin\Release\RFIDInterface.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.csprojResolveAssemblyReference.cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.MainForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.Properties.Resources.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.ReaderConfigForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.SysitConfigForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.TagAccessForm.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.csproj.GenerateResource.Cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\ReadersTest\obj\x86\Release\ReadersTest.pdb

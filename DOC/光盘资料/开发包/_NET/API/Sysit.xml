@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Readers>
+  <FindTagHistory>
+    <Item>23</Item>
+    <Item>12</Item>
+    <Item>1</Item>
+    <Item>f</Item>
+    <Item>
+    </Item>
+    <Item>hgd</Item>
+    <Item>6c</Item>
+    <Item>60</Item>
+    <Item>00</Item>
+  </FindTagHistory>
+  <TagType>
+    <Tag_6C>
+      <M0>
+        <KillPWD>
+          <Ptr>0</Ptr>
+          <Len>2</Len>
+        </KillPWD>
+        <AccessPWD>
+          <Ptr>2</Ptr>
+          <Len>2</Len>
+        </AccessPWD>
+      </M0>
+      <M1>
+        <CRC>
+          <Ptr>0</Ptr>
+          <Len>1</Len>
+        </CRC>
+        <PC>
+          <Ptr>1</Ptr>
+          <Len>1</Len>
+        </PC>
+        <EPC>
+          <Ptr>2</Ptr>
+          <Len>15</Len>
+        </EPC>
+      </M1>
+      <M2>
+        <Ptr>0</Ptr>
+        <Len>6</Len>
+      </M2>
+      <M3>
+        <Ptr>0</Ptr>
+        <Len>1000</Len>
+      </M3>
+    </Tag_6C>
+    <Tag_6B>
+      <ID Len="8" />
+      <Userdata Len="216" />
+    </Tag_6B>
+  </TagType>
+  <ASCII EPC="false" UserData="false" />
+  <LogLevel>INFO</LogLevel>
+  <Beep>false</Beep>
+  <DemoModeDisplay>0,2,3,4,5,6,7,8,9</DemoModeDisplay>
+  <Reader Name="Reader" Group="SingleReader" Enable="true" ModelNumber="unknown">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_TID_UserData_6C_2" Antenna="129" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+        <TidLen>0</TidLen>
+        <UserDataPtr_6C>0</UserDataPtr_6C>
+        <UserDataLen_6C>0</UserDataLen_6C>
+      </ReadTag>
+      <TagIssue AutoInterval="1000" TestCount="10" ContinueTime="10">
+        <ReadTag ReadMemoryBank="EPC_TID_UserData_Reserved_6C_ID_UserData_6B" Antenna="129" IsLoop="true" TagNum="1">
+          <Tag_6B ReadTimes_6B="0" UserDataPtr_6B="0" UserDataLen_6B="8" UserIsAscii="false" />
+          <Tag_6C ReadTimes_6C="1" TidLen="3" UserDataPtr_6C="0" UserDataLen_6C="3" EpcIsAscii="" UserIsAscii="" />
+        </ReadTag>
+        <Issue IsCommonWrite="false" IsAutoTagIssue="true">
+          <EPC IsChecked="true" IsAscii="false" IsLock="false" IsOutsideData="false">
+            <Start>
+            </Start>
+            <Data Step="1">11223344556677889900aabb</Data>
+            <End>
+            </End>
+            <BlockWrite IsChecked="false">2</BlockWrite>
+          </EPC>
+          <User IsChecked="true" IsAscii="false" IsLock="false" IsOutsideData="false">
+            <Start>
+            </Start>
+            <Data Step="1">1122334455667788</Data>
+            <End>
+            </End>
+            <BlockWrite IsChecked="false">2</BlockWrite>
+          </User>
+          <Data IsChecked="false" IsAscii="false" IsLock="false" MB="EPC" IsOutsideData="false">
+            <Start>
+            </Start>
+            <Data Step="1">1122334455667788</Data>
+            <End>
+            </End>
+          </Data>
+          <AccessPwd IsChecked="false">00000000</AccessPwd>
+          <KillPwd IsChecked="false">00000000</KillPwd>
+        </Issue>
+      </TagIssue>
+    </UserConfig>
+  </Reader>
+  <VEP1>
+    <Item>TNG_KeyRing001,00000000000000000000000000000000,0102030405060708090a0102030405060708090a0102030405060708090a0102</Item>
+  </VEP1>
+  <VEP2>
+    <Item>TNG_KeyRing002,00000000000000000000000000000000,0102030405060708090a0102030405060708090a0102030405060708090a0102</Item>
+  </VEP2>
+  <VEP3>
+    <Item>TNG_KeyRing003,00000000000000000000000000000000,0102030405060708090a0102030405060708090a0102030405060708090a0102</Item>
+  </VEP3>
+  <Server Port="12800" Protocol="IRP1" Enable="true" ReaderType="500" />
+  <Reader Name="807-192.168.0.210" Group="800" Enable="true" ModelNumber="XC-RF807">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.0.210:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="129" IsLoop="true" TagNum="7">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="807-COM1" Group="800" Enable="true" ModelNumber="XC-RF807">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="129" IsLoop="true" TagNum="7">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader507" Group="SingleReader" Enable="true" ModelNumber="XC-RF507">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="143" IsLoop="true" TagNum="7">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <VEP2 />
+  <VEP3 />
+</Readers>

@@ -1,0 +1,36 @@
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\SingleReaderTest.exe
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\SingleReaderTest.pdb
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.Properties.Resources.resources
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.csproj.GenerateResource.Cache
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.exe
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.pdb
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormMain.resources
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\Communication.dll
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\IRP1.dll
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\RFIDInterface.dll
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\Communication.pdb
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\IRP1.pdb
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\bin\Release\RFIDInterface.pdb
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormScanConfig.resources
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormReaderConfig.resources
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormGPIO.resources
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.csprojResolveAssemblyReference.cache
+D:\项目文件\TFS2012 Project\基于UHF RFID读写器通用API软件包和读写器通用演示软件\Source\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormHelp.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\SingleReaderTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\Communication.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\IRP1.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\RFIDInterface.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\Communication.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\IRP1.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Release\RFIDInterface.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.csprojResolveAssemblyReference.cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormGPIO.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormHelp.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormMain.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormReaderConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.FormScanConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.Properties.Resources.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.csproj.GenerateResource.Cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Release\SingleReaderTest.pdb

@@ -1,0 +1,16 @@
+2017/9/29 8:36:36 [ERROR]2017/9/29 8:36:36初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 8:54:33 [ERROR]2017/9/29 8:54:33初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 8:57:29 [INFO]2017/9/29 8:57:29退出系统 
+2017/9/29 8:57:54 [ERROR]2017/9/29 8:57:54初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 8:58:54 [ERROR]2017/9/29 8:58:54初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 8:59:45 [INFO]2017/9/29 8:59:45退出系统 
+2017/9/29 9:13:33 [ERROR]2017/9/29 9:13:33初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 9:14:05 [INFO]2017/9/29 9:14:05退出系统 
+2017/9/29 9:33:41 [ERROR]2017/9/29 9:33:41初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 9:34:06 [INFO]2017/9/29 9:34:06退出系统 
+2017/9/29 9:34:19 [ERROR]2017/9/29 9:34:19初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 9:34:39 [INFO]2017/9/29 9:34:39退出系统 
+2017/9/29 9:35:07 [ERROR]2017/9/29 9:35:07初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 9:40:53 [INFO]2017/9/29 9:40:53退出系统 
+2017/9/29 9:42:14 [ERROR]2017/9/29 9:42:14初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+2017/9/29 9:42:33 [INFO]2017/9/29 9:42:33退出系统 

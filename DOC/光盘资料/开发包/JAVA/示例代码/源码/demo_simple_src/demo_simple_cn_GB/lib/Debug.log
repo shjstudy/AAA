@@ -1,0 +1,11 @@
+Invengo RFID Log 
+2016-05-09 15:25:34,890 [20] DEBUG - Reader is running.Connected:true
+2016-05-09 15:31:10,656 [18] DEBUG - Reader is running.Connected:true
+2016-05-09 16:54:04,078 [19] DEBUG - Reader is running.Connected:true
+2016-05-09 16:59:59,312 [21] DEBUG - Reader is running.Connected:true
+2016-05-09 17:07:00,359 [19] DEBUG - Reader is running.Connected:true
+2016-05-09 17:45:17,625 [21] DEBUG - Reader is running.Connected:true
+2016-05-09 17:46:00,796 [19] DEBUG - Reader is running.Connected:true
+2016-05-09 17:52:08,437 [19] DEBUG - Reader is running.Connected:true
+2016-05-10 16:36:02,015 [13] FATAL - Reader:建立连接失败。connect timed out
+2016-06-16 17:00:09,718 [13] FATAL - Reader:建立连接失败。connect timed out

@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6A97316-F526-4F3C-BF20-1B8EC67697A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Communication, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\RFID\Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewAutoFilter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="IDAL">
+      <HintPath>..\..\NewLib\IDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Invengo.Language, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\RFID\Invengo.Language.dll</HintPath>
+    </Reference>
+    <Reference Include="IRP1, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\RFID\IRP1.dll</HintPath>
+    </Reference>
+    <Reference Include="IServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\IServices.dll</HintPath>
+    </Reference>
+    <Reference Include="MCP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\MCP.dll</HintPath>
+    </Reference>
+    <Reference Include="MCP.Service.Siemens, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\MCP.Service.Siemens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\OPC.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Comn, Version=1.10.2.0, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\NewLib\OpcRcw.Comn.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Da, Version=3.0.3.0, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\NewLib\OpcRcw.Da.dll</HintPath>
+    </Reference>
+    <Reference Include="RFIDInterface, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\RFID\RFIDInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NewLib\Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\frmChangePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmChangePWD.designer.cs">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmGroupInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmGroupInfo.designer.cs">
+      <DependentUpon>frmGroupInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmGroupList.designer.cs">
+      <DependentUpon>frmGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmGroupManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmGroupManage.designer.cs">
+      <DependentUpon>frmGroupManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmGroupUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmGroupUser.designer.cs">
+      <DependentUpon>frmGroupUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmUserInfo.designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmUserList.designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLBase.cs" />
+    <Compile Include="BLL\Server.cs" />
+    <Compile Include="BLL\UserBll.cs" />
+    <Compile Include="Common\ExportToExcel.cs" />
+    <Compile Include="Common\frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmSelect.Designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crane.cs" />
+    <Compile Include="Dispatching\Process\CraneProcess.cs" />
+    <Compile Include="Dispatching\Process\InStockToStationProcess.cs" />
+    <Compile Include="Dispatching\Process\OutStockFinishProcess.cs" />
+    <Compile Include="Dispatching\Process\Report.cs" />
+    <Compile Include="Dispatching\Process\RtnMessage.cs" />
+    <Compile Include="Dispatching\TCPMessageParse.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RFIDRead.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="View\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Base\frmDeviceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Base\frmDeviceEdit.Designer.cs">
+      <DependentUpon>frmDeviceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Base\frmDevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Base\frmDevices.Designer.cs">
+      <DependentUpon>frmDevices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmProductCls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmProductCls.Designer.cs">
+      <DependentUpon>frmProductCls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmProductClsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmProductClsEdit.Designer.cs">
+      <DependentUpon>frmProductClsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmProductEdit.Designer.cs">
+      <DependentUpon>frmProductEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmRFID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmRFID.Designer.cs">
+      <DependentUpon>frmRFID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CMD\frmRFIDEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CMD\frmRFIDEdit.Designer.cs">
+      <DependentUpon>frmRFIDEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellInfo.Designer.cs">
+      <DependentUpon>frmCellInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmOutView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmOutView.Designer.cs">
+      <DependentUpon>frmOutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Param\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Param\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Param\FormReaderConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Param\FormReaderConfig.designer.cs">
+      <DependentUpon>FormReaderConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Param\FormScanConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Param\FormScanConfig.designer.cs">
+      <DependentUpon>FormScanConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Query\frmSafeQtyQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Query\frmSafeQtyQuery.Designer.cs">
+      <DependentUpon>frmSafeQtyQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Query\frmStockQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Query\frmStockQuery.Designer.cs">
+      <DependentUpon>frmStockQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Query\frmTaskQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Query\frmTaskQuery.Designer.cs">
+      <DependentUpon>frmTaskQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TaskCarNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TaskCarNo.Designer.cs">
+      <DependentUpon>TaskCarNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellDialog.designer.cs">
+      <DependentUpon>frmCellDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellOpDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellOpDialog.designer.cs">
+      <DependentUpon>frmCellOpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dispatcher\frmCellQuery.Designer.cs">
+      <DependentUpon>frmCellQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Filter.cs" />
+    <Compile Include="View\frmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmMonitor.Designer.cs">
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmReassign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmReassign.designer.cs">
+      <DependentUpon>frmReassign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmReassignEmptyCell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmReassignEmptyCell.designer.cs">
+      <DependentUpon>frmReassignEmptyCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmReassignOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmReassignOption.Designer.cs">
+      <DependentUpon>frmReassignOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTaskOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTaskOption.Designer.cs">
+      <DependentUpon>frmTaskOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Param\Parameter.cs" />
+    <Compile Include="View\Param\ParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Param\ParameterForm.designer.cs">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SelectDialog.designer.cs">
+      <DependentUpon>SelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmScan.designer.cs">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmInventorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmInventorEdit.Designer.cs">
+      <DependentUpon>frmInventorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmMiniLoadTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmMiniLoadTask.Designer.cs">
+      <DependentUpon>frmMiniLoadTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmCarTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmCarTask.Designer.cs">
+      <DependentUpon>frmCarTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmInventor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmInventor.Designer.cs">
+      <DependentUpon>frmInventor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmDeviceTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmDeviceTask.Designer.cs">
+      <DependentUpon>frmDeviceTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmOutStockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmOutStockEdit.Designer.cs">
+      <DependentUpon>frmOutStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOut.designer.cs">
+      <DependentUpon>frmPalletOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOutEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOutEdit.designer.cs">
+      <DependentUpon>frmPalletOutEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOutTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmPalletOutTask.Designer.cs">
+      <DependentUpon>frmPalletOutTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmOutStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmOutStock.Designer.cs">
+      <DependentUpon>frmOutStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmInStockTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmInStockTask.Designer.cs">
+      <DependentUpon>frmInStockTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmPalletInTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmPalletInTask.Designer.cs">
+      <DependentUpon>frmPalletInTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Task\frmTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Task\frmTaskDialog.Designer.cs">
+      <DependentUpon>frmTaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WCSDataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account\frmChangePWD.resx">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmGroupInfo.resx">
+      <DependentUpon>frmGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmGroupList.resx">
+      <DependentUpon>frmGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmGroupManage.resx">
+      <DependentUpon>frmGroupManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmGroupUser.resx">
+      <DependentUpon>frmGroupUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frmSelect.resx">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Base\frmDeviceEdit.resx">
+      <DependentUpon>frmDeviceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Base\frmDevices.resx">
+      <DependentUpon>frmDevices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmProductCls.resx">
+      <DependentUpon>frmProductCls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmProductClsEdit.resx">
+      <DependentUpon>frmProductClsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmProductEdit.resx">
+      <DependentUpon>frmProductEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmRFID.resx">
+      <DependentUpon>frmRFID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CMD\frmRFIDEdit.resx">
+      <DependentUpon>frmRFIDEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dispatcher\frmCellInfo.resx">
+      <DependentUpon>frmCellInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dispatcher\frmOutView.resx">
+      <DependentUpon>frmOutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Param\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Param\FormReaderConfig.resx">
+      <DependentUpon>FormReaderConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Param\FormScanConfig.resx">
+      <DependentUpon>FormScanConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Query\frmSafeQtyQuery.resx">
+      <DependentUpon>frmSafeQtyQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Query\frmStockQuery.resx">
+      <DependentUpon>frmStockQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Query\frmTaskQuery.resx">
+      <DependentUpon>frmTaskQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TaskCarNo.resx">
+      <DependentUpon>TaskCarNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dispatcher\frmCellDialog.resx">
+      <DependentUpon>frmCellDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dispatcher\frmCellOpDialog.resx">
+      <DependentUpon>frmCellOpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dispatcher\frmCellQuery.resx">
+      <DependentUpon>frmCellQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmMonitor.resx">
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReassign.resx">
+      <DependentUpon>frmReassign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReassignEmptyCell.resx">
+      <DependentUpon>frmReassignEmptyCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReassignOption.resx">
+      <DependentUpon>frmReassignOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTaskOption.resx">
+      <DependentUpon>frmTaskOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Param\ParameterForm.resx">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SelectDialog.resx">
+      <DependentUpon>SelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmScan.resx">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmInventorEdit.resx">
+      <DependentUpon>frmInventorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmMiniLoadTask.resx">
+      <DependentUpon>frmMiniLoadTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmCarTask.resx">
+      <DependentUpon>frmCarTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmInventor.resx">
+      <DependentUpon>frmInventor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmDeviceTask.resx">
+      <DependentUpon>frmDeviceTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmOutStockEdit.resx">
+      <DependentUpon>frmOutStockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmPalletOut.resx">
+      <DependentUpon>frmPalletOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmPalletOutEdit.resx">
+      <DependentUpon>frmPalletOutEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmPalletOutTask.resx">
+      <DependentUpon>frmPalletOutTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmOutStock.resx">
+      <DependentUpon>frmOutStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmInStockTask.resx">
+      <DependentUpon>frmInStockTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmPalletInTask.resx">
+      <DependentUpon>frmPalletInTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Task\frmTaskDialog.resx">
+      <DependentUpon>frmTaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\WCSDataService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WCSDataService\WCSDataService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Convey.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CranePLC01.xml" />
+    <None Include="Web References\WCSDataService\WCSDataService.disco" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\Barcode_32.png" />
+    <Content Include="Monitor.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Crane1.png" />
+    <None Include="Resources\Crane3.png" />
+    <None Include="Resources\Crane4.png" />
+    <None Include="Resources\Crane2.png" />
+    <None Include="Resources\car11.png" />
+    <None Include="Resources\car12.png" />
+    <None Include="Resources\Barcode.png" />
+    <Content Include="Resources\Add.png" />
+    <None Include="Resources\A_Rack.png" />
+    <None Include="Resources\B_Rack.png" />
+    <Content Include="Resources\del.png" />
+    <Content Include="Resources\down.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\Elevator.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\next.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\process_accept.png" />
+    <None Include="Resources\process_remove.png" />
+    <None Include="Resources\PalletIn.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\refresh24.png" />
+    <Content Include="Resources\remove.png" />
+    <None Include="Resources\shuttlecar.png" />
+    <None Include="Resources\S_Rack.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\S_Rack0.png" />
+    <Content Include="Resources\up.png" />
+    <None Include="Resources\user_add.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user_remove.png" />
+    <Content Include="TableXML\CMD_Cell.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TableXML\CMD_Product.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TableXML\CMD_ProductInStock.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8862/WCSDataService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WCSDataService\</RelPath>
+      <UpdateFromURL>http://localhost:8862/WCSDataService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>App_WCSDataService_WCSDataService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

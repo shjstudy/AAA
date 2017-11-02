@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Readers> 
+  <Reader Name="COM1-115200" Group="800" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <ScanMessage ReadMemoryBank="EPC_6C" StopType="800">
+      <Param>0,3,1</Param>
+      <ReadTime>0</ReadTime>
+      <StopTime>0</StopTime>
+    </ScanMessage>
+  </Reader>  
+  <Reader Name="192.168.0.210" Group="500" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.0.210:7086</Port>
+    <ScanMessage ReadMemoryBank="ID_6B" StopType="500">
+      <Param>0,1</Param>
+      <ReadTime>0</ReadTime>
+      <StopTime>0</StopTime>
+    </ScanMessage>
+  </Reader>   
+  <Server Port="12800" Protocol="IRP1" Enable="true"/>
+</Readers>

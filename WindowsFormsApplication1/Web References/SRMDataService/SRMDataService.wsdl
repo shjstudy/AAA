@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="transSRMTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wcsProductObject" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transSRMTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transSRMTaskResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transSRMTaskAisle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wcsProductObject" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transSRMTaskAisleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transSRMTaskAisleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="transSRMTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:transSRMTask" />
+  </wsdl:message>
+  <wsdl:message name="transSRMTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:transSRMTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="transSRMTaskAisleSoapIn">
+    <wsdl:part name="parameters" element="tns:transSRMTaskAisle" />
+  </wsdl:message>
+  <wsdl:message name="transSRMTaskAisleSoapOut">
+    <wsdl:part name="parameters" element="tns:transSRMTaskAisleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SRMDataServiceSoap">
+    <wsdl:operation name="transSRMTask">
+      <wsdl:input message="tns:transSRMTaskSoapIn" />
+      <wsdl:output message="tns:transSRMTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="transSRMTaskAisle">
+      <wsdl:input message="tns:transSRMTaskAisleSoapIn" />
+      <wsdl:output message="tns:transSRMTaskAisleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SRMDataServiceSoap" type="tns:SRMDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transSRMTask">
+      <soap:operation soapAction="http://tempuri.org/transSRMTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transSRMTaskAisle">
+      <soap:operation soapAction="http://tempuri.org/transSRMTaskAisle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SRMDataServiceSoap12" type="tns:SRMDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transSRMTask">
+      <soap12:operation soapAction="http://tempuri.org/transSRMTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transSRMTaskAisle">
+      <soap12:operation soapAction="http://tempuri.org/transSRMTaskAisle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SRMDataService">
+    <wsdl:port name="SRMDataServiceSoap" binding="tns:SRMDataServiceSoap">
+      <soap:address location="http://localhost:8862/SRMDataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SRMDataServiceSoap12" binding="tns:SRMDataServiceSoap12">
+      <soap12:address location="http://localhost:8862/SRMDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Readers>
+  <Reader Name="Reader1" Group="Group1" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM2,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="1" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+      <ReaderType>800</ReaderType>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.248" Group="Group1" Enable="false">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.248:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReadTag ReadMemoryBank="ID_6B" Antenna="1" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+      <ReaderType>500</ReaderType>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.92" Group="模拟器" Enable="false">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.92:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+      <ReaderType>500</ReaderType>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.120" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.120:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="1" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+        <ReadTime>500</ReadTime>
+        <StopTime>500</StopTime>
+      </ReadTag>
+      <ReaderType>800</ReaderType>
+    </UserConfig>
+  </Reader>
+  <Server Port="7086" Protocol="IRP1" Enable="false" ReaderType="500" />
+  <Reader Name="Reader4" Group="Group2" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader5" Group="Group2" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader6" Group="Group2" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Server Port="8060" Protocol="IRP1" Enable="false" ReaderType="500" />
+  <Reader Name="COM1-115200" Group="500" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM1,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+        <StopTime>1000</StopTime>
+        <ReadTime>1000</ReadTime>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="COM2-115200" Group="800系列" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM2,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Reader8" Group="800系列" Enable="false">
+    <Port Type="RS232" Protocol="IRP1">COM8,115200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="Com3-19200" Group="500" Enable="true">
+    <Port Type="RS232" Protocol="IRP1">COM3,19200</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="ID_6B" Antenna="0" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.120" Group="800系列" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.120:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="1" IsLoop="true" TagNum="8">
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.120" Group="500" Enable="true">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.120:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>500</ReaderType>
+      <ReadTag ReadMemoryBank="ID_6B" Antenna="1" IsLoop="true" TagNum="8">
+        <StopType>500</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+  <Reader Name="192.168.1.213" Group="800系列" Enable="false">
+    <Port Type="TCPIP_Client" Protocol="IRP1">192.168.1.213:7086</Port>
+    <UserConfig Protocol="IRP1">
+      <ReaderType>800</ReaderType>
+      <ReadTag ReadMemoryBank="TID_6C" Antenna="0" IsLoop="true" TagNum="8">
+      
+        <StopType>800</StopType>
+      </ReadTag>
+    </UserConfig>
+  </Reader>
+</Readers>

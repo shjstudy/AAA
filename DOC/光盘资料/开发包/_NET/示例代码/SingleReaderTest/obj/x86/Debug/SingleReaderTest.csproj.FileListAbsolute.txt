@@ -1,0 +1,52 @@
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Communication.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\IRP1.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\RFIDInterface.dll
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Communication.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\IRP1.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\RFIDInterface.pdb
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csprojResolveAssemblyReference.cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormGPIO.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormHelp.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormMain.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormReaderConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormScanConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.Properties.Resources.resources
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csproj.GenerateResource.Cache
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文\RFID Demo V1.3.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.exe
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Communication.dll
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\IRP1.dll
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\RFIDInterface.dll
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Communication.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\IRP1.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\RFIDInterface.pdb
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csprojResolveAssemblyReference.cache
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormGPIO.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormHelp.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormMain.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormReaderConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormScanConfig.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.Properties.Resources.resources
+E:\固定式DEMO\DEMO 1.33\中文 - V1.4\RFID Demo V1.4\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csproj.GenerateResource.Cache
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.exe
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.pdb
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csprojResolveAssemblyReference.cache
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormGPIO.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormHelp.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormMain.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormReaderConfig.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.FormScanConfig.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.Properties.Resources.resources
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\obj\x86\Debug\SingleReaderTest.csproj.GenerateResource.Cache
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.exe
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\SingleReaderTest.pdb
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Communication.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\Invengo.Language.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\IRP1.dll
+D:\Work\AAA\DOC\光盘资料\开发包\_NET\示例代码\SingleReaderTest\bin\Debug\RFIDInterface.dll

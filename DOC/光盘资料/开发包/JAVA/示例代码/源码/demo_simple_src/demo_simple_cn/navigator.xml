@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+	<group name="" text="ReaderConfigForm.lbl_MI1" class="com.invengo.xcrf.ui.panel.readerConfig.A0_BaseConfig">
+		<item name="lbl_A1" text="ReaderConfigForm.lbl_A1"
+			class="com.invengo.xcrf.ui.panel.readerConfig.ReaderTagConfigPanel" />
+		<item name="lbl_A2" text="ReaderConfigForm.lbl_A2"
+			class="com.invengo.xcrf.ui.panel.readerConfig.TagFilterPanel" />
+		<item name="lbl_A3" text="ReaderConfigForm.lbl_A3"
+			class="com.invengo.xcrf.ui.panel.readerConfig.A3_AntennaConfigPanel" />
+		<!--
+		<item name="lbl_A4" text="ReaderConfigForm.lbl_A4" class="com.invengo.xcrf.ui.panel.readerConfig.IOConfigPanel" />
+		<item name="lbl_A5" text="ReaderConfigForm.lbl_A5"
+			class="com.invengo.xcrf.ui.panel.readerConfig.A5_ReaderConnPanel" />
+	 	-->
+	</group>
+	<group name="" text="ReaderConfigForm.lbl_MI2" class="com.invengo.xcrf.ui.panel.TestPanel">
+		<item name="lbl_B6" text="ReaderConfigForm.lbl_B6"
+			class="com.invengo.xcrf.ui.panel.readerConfig.B6_NetCommPanel" />
+		<!--
+		<item name="lbl_B5" text="ReaderConfigForm.lbl_B5" class="com.invengo.xcrf.ui.panel.readerConfig.B5_Wiegand" />
+		<item name="lbl_B7" text="ReaderConfigForm.lbl_B7" class="com.invengo.xcrf.ui.panel.readerConfig.B7_NetMode" />
+		<item name="lbl_B9" text="ReaderConfigForm.lbl_B9" class="com.invengo.xcrf.ui.panel.readerConfig.B9_IOTrriggle" />
+		<item name="lbl_B3" text="ReaderConfigForm.lbl_B3" class="com.invengo.xcrf.ui.panel.readerConfig.B3_KeepAlive" />
+		-->
+	</group>
+	<!-- 
+	<group name="" text="ReaderConfigForm.lbl_MI3" class="com.invengo.xcrf.ui.panel.TestPanel">
+		<item name="lbl_C4" text="ReaderConfigForm.lbl_C4" class="com.invengo.xcrf.ui.panel.readerConfig.C4_TagRWPanel" />
+		<item name="lbl_C5" text="ReaderConfigForm.lbl_C5"
+			class="com.invengo.xcrf.ui.panel.readerConfig.C5_StaticRWPanel" />
+		<item name="lbl_C6" text="ReaderConfigForm.lbl_C6"
+			class="com.invengo.xcrf.ui.panel.readerConfig.C6_DynamicPanel" />
+	</group>
+		<group name="" text="ReaderConfigForm.lbl_MI4" class="com.invengo.xcrf.ui.panel.TestPanel">
+		<item name="lbl_D1" text="ReaderConfigForm.lbl_D1" class="com.invengo.xcrf.ui.panel.readerConfig.D1" />
+		<item name="lbl_D2" text="ReaderConfigForm.lbl_D2" class="com.invengo.xcrf.ui.panel.readerConfig.D2" />
+		<item name="lbl_D3" text="ReaderConfigForm.lbl_D3" class="com.invengo.xcrf.ui.panel.readerConfig.D3" />
+		<item name="lbl_D4" text="ReaderConfigForm.lbl_D4" class="com.invengo.xcrf.ui.panel.TestPanel" />
+		<item name="lbl_D5" text="ReaderConfigForm.lbl_D5" class="com.invengo.xcrf.ui.panel.TestPanel" />
+		<item name="lbl_D6" text="ReaderConfigForm.lbl_D6" class="com.invengo.xcrf.ui.panel.TestPanel" />
+	</group>
+	-->
+</groups>

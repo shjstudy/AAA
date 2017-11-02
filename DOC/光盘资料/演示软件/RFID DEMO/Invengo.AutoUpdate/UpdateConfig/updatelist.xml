@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--FTP服务器上更新列表-->
+<root>
+  <!--当前最新版本-->
+  <version value="1.3" />
+  <!--文件列表-->
+  <files>    
+    <file name="RFID Demo V1.3.zip" version="V1.3" />   
+  </files> 
+  <history>
+    <!--历史版本，最后一行为最新版本号-->
+    <version name="V1.0">1.0</version>   
+    <version name="V1.1">1.1</version>   
+    <version name="V1.2">1.2</version>
+    <version name="V1.2.1">1.2.1</version>
+    <version name="V1.2.2">1.2.2</version>
+    <version name="V1.2.3">1.2.3</version>
+    <version name="V1.3">1.3</version>
+  </history>
+</root>

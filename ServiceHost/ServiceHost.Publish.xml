@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\ServiceHost" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Util.dll" publishTime="02/24/2017 16:52:07" />
+    <file relUrl="bin/ServiceHost.dll" publishTime="10/10/2017 20:10:04" />
+    <file relUrl="bin/Services.dll" publishTime="01/11/2017 09:01:38" />
+    <file relUrl="DB.xml" publishTime="10/10/2017 13:21:57" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="07/26/2017 08:51:59" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="07/26/2017 08:51:59" />
+    <file relUrl="BLLBaseService.svc" publishTime="03/01/2017 14:40:23" />
+    <file relUrl="SRMDataService.svc" publishTime="09/15/2017 11:58:03" />
+    <file relUrl="bin/IDAL.dll" publishTime="10/27/2016 15:15:57" />
+    <file relUrl="bin/SQLDAL.dll" publishTime="10/10/2017 19:05:02" />
+    <file relUrl="SecurityService.svc" publishTime="03/01/2017 14:40:23" />
+    <file relUrl="Web.config" publishTime="10/10/2017 20:10:13" />
+    <file relUrl="bin/IServices.dll" publishTime="01/11/2017 11:36:32" />
+    <file relUrl="bin/BLL.dll" publishTime="08/05/2016 07:49:50" />
+  </publishProfile>
+</publishData>

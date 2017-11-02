@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<Config>
+  <TCPServer IP="127.0.0.1" Port="30001" />
+  <Parse Type="MCP.Service.TCP.dll,MCP.Service.TCP.MessageParse" />
+</Config>

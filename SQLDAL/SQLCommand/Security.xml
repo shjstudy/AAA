@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SqlCommand>
+  <!--根据用户名，获取用户信息，登陆时使用-->
+  <Command ID="SelectUserInfoByUserName">
+    <CommandString>
+      select a.*
+      from sys_UserList a
+      where UserName=@UserName
+    </CommandString>
+  </Command>
+  <!--用户操作日志-->
+  <Command ID="InsertOperatorLog">
+    <CommandString>
+      insert into sys_OperatorLog ([LoginUser],[LoginTime],[LoginModule],[ExecuteOperator]) values (@LoginUser,@LoginTime,@LoginModule,@ExecuteOperator)
+    </CommandString>
+  </Command>
+
+  <!--获取用户所在组的系统权限-->
+  <Command ID="SelectGroupRole">
+    <CommandString>
+      select distinct(SubModuleCode),n.SystemName,m.ModuleID,OperatorCode,n.MenuCode,n.MenuTitle,n.MenuParent,
+      n.MenuUrl,n.MenuImage,n2.MenuImage as ParentImage,n.OrderIndex,n.ID
+      from sys_GroupOperationList o
+      left join sys_ModuleList  m on m.ModuleID=o.ModuleID
+      left join sys_GroupList g on g.GroupID=o.GroupID
+      left join sys_UserLIst  u on u.GroupID=g.GroupID 
+      left join sys_Menu      n on n.MenuCode=m.SubModuleCode
+      left join sys_Menu      n2 on n2.MenuCode=substring(n.MenuCode,1,8)   
+      where g.GroupID=@GroupID and n.SystemName=@SystemName and n.IsHide='0'
+      order by n.OrderIndex, SubModuleCode
+
+    </CommandString>
+  </Command>
+  <!--获取用户的快捷桌面-->
+  <Command ID="SelectUserQuickDesktop">
+    <CommandString>
+      SELECT m.MenuParent,  m.MenuTitle, q.ModuleID, m.MenuImage, m.DestopImage, m.MenuUrl,m.SqlCmdFlag,m.FormID,m.MenuCode
+      FROM dbo.sys_QuickDestop AS q LEFT OUTER JOIN  dbo.sys_Menu AS m ON q.ModuleID = m.ID
+      WHERE     (q.UserID =@UserID) and m.IsHide=0 AND (q.ModuleID IN
+      (SELECT DISTINCT n.ID
+      FROM dbo.sys_GroupOperationList AS o LEFT OUTER JOIN
+      dbo.sys_ModuleList AS m ON m.ModuleID = o.ModuleID LEFT OUTER JOIN
+      dbo.sys_GroupList AS g ON g.GroupID = o.GroupID LEFT OUTER JOIN
+      dbo.sys_UserList AS u ON u.GroupID = g.GroupID LEFT OUTER JOIN
+      dbo.sys_Menu AS n ON n.MenuCode = m.SubModuleCode
+      WHERE (u.UserID =@UserID))) order by m.MenuCode
+    </CommandString>
+  </Command>
+
+  <!--错误日志记录-->
+  <Command ID="InsertExceptionalLog">
+    <CommandString>
+      INSERT INTO sys_ExceptionalLog([CatchTime],[ModuleName],[FunctionName],[ExceptionalType],[ExceptionalDescription])
+      VALUES(@CatchTime,@ModuleName,@FunctionName,@ExceptionalType,@ExceptionalDescription)"
+    </CommandString>
+  </Command>
+
+  <!--获取TableName的行数-->
+  <Command ID="SelectRowCount">
+    <CommandString>
+      select count(*) from {0} where {1} 
+    </CommandString>
+  </Command>
+  <!--分页功能-->
+  <Command ID="SpDataQuery">
+    <CommandString>sp_PageView</CommandString>
+  </Command>
+
+  <Command ID="SelectSoftWareInfo">
+    <CommandString>
+      select SoftwareName,Version,Company,Copyrigth,CompanyTelephone,CompanyFax,CompanyAddress,CompanyEmail,CompanyWeb,Memo from sys_SoftwareDescription where state=1
+    </CommandString>
+  </Command>
+  <!--获取所有用户-->
+  <Command ID="SelectUser">
+    <CommandString>
+      select * from SYS_USERLIST where {0}
+    </CommandString>
+  </Command>
+  
+  <!--获取所有用户-->
+  <Command ID="SelectAllUser">
+    <CommandString>
+      select UserName ,GroupName ,UserID from sys_UserList u left join sys_GroupList g on u.GroupID=g.GroupID
+      where u.UserName!='admin'
+      order by UserName
+    </CommandString>
+  </Command>
+  
+  <Command ID="SelectGroupUser">
+    <CommandString>
+      select UserID, UserName ,GroupName  from sys_UserList u left join sys_GroupList g on u.GroupID=g.GroupID
+      where u.GroupID=@GroupID
+      order by username
+    </CommandString>
+  </Command>
+  
+  <!--更新用户所在分组-->
+  <Command ID="UpdateUserGroup">
+    <CommandString>
+      update sys_UserList set GroupID=@GroupID where UserID in ({0}) and UserName!='admin'
+    </CommandString>
+  </Command>
+
+  <!--更新用户密码-->
+  <Command ID="UpdateUserPWD">
+    <CommandString>
+      update SYS_USERLIST set UserPassword=@PWD where UserName=@UserName
+
+    </CommandString>
+  </Command>
+  
+  <!--获取用户有权限操作的一级模块-->
+  <Command ID="SelectUserOperateModule">
+    <CommandString>
+      select distinct(n2.MenuTitle),n2.ID, n2.OrderIndex,n2.MenuCode,n2.FormID,n2.SqlCmdFlag,n2.IconCls
+      from sys_GroupOperationList o
+      left join sys_ModuleList  m on m.ModuleID=o.ModuleID
+      left join sys_GroupList g on g.GroupID=o.GroupID
+      left join sys_UserLIst  u on u.GroupID=g.GroupID
+      left join sys_Menu      n2 on n2.MenuCode=substring(m.SubModuleCode,1,8)
+      where n2.SystemName='WMS' and n2.IsHide=0 and UserName=@UserName
+      order by n2.OrderIndex
+    </CommandString>
+  </Command>
+
+  <!--获取用户有权限操作的二级模块-->
+  <Command ID="SelectUserOperateSubModule">
+    <CommandString>
+      select distinct(m.SubModuleCode),n.MenuParent,n.MenuTitle,n.ID,n.OrderIndex,n.MenuUrl,n.FormID,n.SqlCmdFlag,n.IconCls
+      from sys_GroupOperationList o
+      left join sys_ModuleList  m on m.ModuleID=o.ModuleID
+      left join sys_GroupList g on g.GroupID=o.GroupID
+      left join sys_UserLIst  u on u.GroupID=g.GroupID
+      left join sys_Menu      n on n.MenuCode=m.SubModuleCode
+      where n.SystemName='WMS' and n.IsHide=0 AND UserName=@UserName
+      order by n.OrderIndex
+    </CommandString>
+  </Command>
+  
+  <!--删除快捷方式-->
+  <Command ID="DeleteQuickDestop">
+    <CommandString>
+      delete from sys_QuickDestop where UserID=@UserID
+    </CommandString>
+  </Command>
+
+  <!--设置快捷方式-->
+  <Command ID="InsertQuickDestop">
+    <CommandString>
+      insert into sys_QuickDestop (UserID,ModuleID) values(@UserID,@ModuleID)
+    </CommandString>
+  </Command>
+
+  <!--删除用户-->
+  <Command ID="DeleteUser">
+    <CommandString>
+      delete from sys_UserList where UserID in ({0})
+    </CommandString>
+  </Command>
+  <!--新增用户-->
+  <Command ID="InsertUser">
+    <CommandString>
+      insert into sys_UserList(UserName,UserPassword,EmployeeCode,Memo)
+      values(@UserName,@UserPassword,@EmployeeCode,@Memo)
+    </CommandString>
+  </Command>
+  <!--更新用户-->
+  <Command ID="UpdateUserInfo">
+    <CommandString>
+      update sys_UserList set UserName=@UserName,EmployeeCode=@EmployeeCode,Memo=@Memo where UserID=@UserID
+    </CommandString>
+  </Command>
+  <!--删除角色-->
+  <Command ID="DeleteGroup">
+    <CommandString>
+      delete from sys_GroupList WHERE GroupID in ({0})
+    </CommandString>
+  </Command>
+  <!--新增角色-->
+  <Command ID="InsertGroup">
+    <CommandString>
+      insert into sys_GroupList(GroupName,Memo,State)
+      values(@GroupName,@Memo,@State)
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectGroup">
+    <CommandString>
+      select * from sys_GroupList where {0} order by GroupID
+    </CommandString>
+  </Command> 
+  
+  <!--更新角色-->
+  <Command ID="UpdateGroupInfo">
+    <CommandString>
+      update sys_GroupList set GroupName=@GroupName,Memo=@Memo where GroupID=@GroupID
+    </CommandString>
+  </Command>
+ <!--角色是否被用-->
+  <Command ID="SelectGroupMemberCount">
+    <CommandString>
+      select count(*) from sys_UserList where GroupID=@GroupID
+    </CommandString>
+  </Command>
+
+
+  <Command ID="SeleteOperatorLog">
+    <CommandString>
+      select * from sys_OperatorLog WHERE {0} order by  LoginTime desc
+    </CommandString>
+  </Command>
+  <!--删除操作记录-->
+  <Command ID="DeleteOperatorLog">
+    <CommandString>
+      DELETE sys_OperatorLog WHERE OperatorLogID in ({0})
+    </CommandString>
+  </Command>
+  <!--清空操作日志-->
+  <Command ID="DeleteAllOperatorLog">
+    <CommandString>
+      truncate table  sys_OperatorLog
+    </CommandString>
+  </Command>
+  <!--查询系统日志-->
+  <Command ID="SeleteExceptionalLog">
+    <CommandString>
+      select * from  sys_ExceptionalLog WHERE {0} order by CatchTime desc
+    </CommandString>
+  </Command>
+  
+  <Command ID="DeleteExceptionalLog">
+    <CommandString>
+      DELETE sys_ExceptionalLog WHERE ExceptionalLogID in ({0})
+    </CommandString>
+  </Command>
+  <!--清空系统日志-->
+  <Command ID="DeleteAllExceptionalLog">
+    <CommandString>
+      truncate table  sys_ExceptionalLog
+    </CommandString>
+  </Command>
+  
+  <!--系统模块-->
+<Command ID="SelectSystemModules">
+  <CommandString>
+    select distinct(ModuleCode) ,MenuTitle from sys_ModuleList  m left join sys_Menu n  on m.ModuleCode=n.MenuCode
+    where n.SystemName=@SystemName order by ModuleCode
+  </CommandString>
+</Command>
+  
+  <Command ID="SelectSystemSubModules">
+    <CommandString>
+      select distinct(N.ID),MenuTitle,m.SubModuleCode,MenuParent,ModuleCode,n.OrderIndex from sys_ModuleList m 
+      left join sys_Menu n on m.SubModuleCode=n.MenuCode where SystemName=@SystemName order by n.OrderIndex, m.SubModuleCode
+    </CommandString>
+  </Command>
+  <Command ID="SelectSystemOperations">
+    <CommandString>
+      select SubModuleName,SubModuleCode,OperatorDescription,ModuleID
+      from sys_ModuleList
+      where ModuleCode in
+      (select MenuCode from sys_Menu where SystemName=@SystemName)
+      order by SubModuleCode,OperatorCode
+    </CommandString>
+  </Command>
+  <Command ID="SelectGroupOperation">
+    <CommandString>
+      select ModuleID from sys_GroupOperationList where GroupID=@GroupID
+    </CommandString>
+  </Command>
+  <Command ID="DeleteGroupOperation">
+    <CommandString>
+      delete from sys_GroupOperationList where GroupID=@GroupID and ModuleID in (
+      SELECT ModuleID FROM dbo.sys_ModuleList   WHERE ModuleCode in (select MenuCode from sys_Menu where SystemName=@SystemName))
+    </CommandString>
+  </Command>
+  <Command ID="InsertGroupOperation">
+    <CommandString>
+      insert into sys_GroupOperationList (GroupID,ModuleID) values (@GroupID,@ModuleID)
+    </CommandString>
+  </Command>
+  
+  <!---->
+  <Command ID="SelectFieldValue">
+    <CommandString>
+      select {1}  from {0} where {2}
+    </CommandString>
+  </Command>
+ <!--前后笔资料-->
+  <Command ID="SelectViewTable">
+    <CommandString>
+      select Top 1 * from {0} where {1} {2}
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectPrimaryType">
+    <CommandString>
+      select user_type_id,max_length from sys.columns where name='{0}' and object_id =(select object_id from sys.objects where name='{1}')
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectMaxValue">
+    <CommandString>
+      select Max({1})  from {0} where {2}
+    </CommandString>
+  </Command>
+
+  <Command ID="SelectTmpAutoCode">
+    <CommandString>
+      select *  from Sys_AutoCode where {0}
+    </CommandString>
+  </Command>
+  <Command ID="SelectDataPage">
+    <CommandString>
+      Select  {0}  from {1} where {2} order by {3}
+    </CommandString>
+  </Command>
+  <Command ID="SelectUserPermission">
+    <CommandString>
+      select distinct(SubModuleCode),n.SystemName,m.ModuleID,OperatorCode,n.MenuCode,n.MenuTitle,n.MenuParent,
+      n.MenuUrl,n.MenuImage,n2.MenuImage as ParentImage,n.OrderIndex,n.ID
+      from sys_GroupOperationList o
+      left join sys_ModuleList  m on m.ModuleID=o.ModuleID
+      left join sys_GroupList g on g.GroupID=o.GroupID
+      left join sys_UserLIst  u on u.GroupID=g.GroupID
+      left join sys_Menu      n on n.MenuCode=m.SubModuleCode
+      left join sys_Menu      n2 on n2.MenuCode=substring(n.MenuCode,1,8)
+      where U.UserName=@UserName and n.SystemName=@SystemName and n.IsHide='0'
+      order by n.OrderIndex, SubModuleCode
+      <!--/* SubModuleCode='MNU_W00A_00A' and OperatorCode=1 */-->
+    </CommandString>
+  </Command>
+  <Command ID="InsertGroupOperationList">
+    <CommandString>
+      delete from sys_GroupOperationList where GroupID=1;insert into sys_GroupOperationList(GroupID,ModuleID)
+      select SYS_GROUPLIST.GroupID,SYS_MODULELIST.ModuleID
+      from SYS_GROUPLIST,SYS_MODULELIST
+      where SYS_GROUPLIST.GroupName='admin'
+    </CommandString>
+  </Command>
+</SqlCommand>

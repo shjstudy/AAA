@@ -1,0 +1,43 @@
+[ERROR] 2017/10/31 10:10:27 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 10:10:51 退出系统 
+[ERROR] 2017/10/31 10:14:20 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 10:14:40 读写器Reader:建立连接失败! 
+[ERROR] 2017/10/31 10:31:37 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 10:31:58 读写器Reader:建立连接失败! 
+[ERROR] 2017/10/31 10:33:26 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 10:33:47 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 10:38:49 退出系统 
+[ERROR] 2017/10/31 10:42:40 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 10:42:59 读写器Reader:建立连接失败! 
+[ERROR] 2017/10/31 10:46:24 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 11:14:33 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 11:14:42 退出系统 
+[ERROR] 2017/10/31 17:27:32 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 17:27:43 退出系统 
+[ERROR] 2017/10/31 17:28:06 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 17:28:25 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 17:28:30 退出系统 
+[ERROR] 2017/10/31 17:31:25 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 17:31:38 退出系统 
+[ERROR] 2017/10/31 17:32:28 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 17:32:35 退出系统 
+[ERROR] 2017/10/31 17:39:56 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 17:40:35 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 17:40:44 无数据！ 
+[INFO] 2017/10/31 17:40:50 退出系统 
+[ERROR] 2017/10/31 17:56:46 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 17:57:05 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 17:57:53 退出系统 
+[ERROR] 2017/10/31 18:24:30 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 18:24:50 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 18:25:07 退出系统 
+[ERROR] 2017/10/31 18:29:56 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 18:29:56 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 18:30:06 退出系统 
+[ERROR] 2017/10/31 18:30:27 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[ERROR] 2017/10/31 18:30:27 读写器Reader:建立连接失败! 
+[INFO] 2017/10/31 18:31:22 退出系统 
+[ERROR] 2017/10/31 18:34:21 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 18:34:21 RFID连接成功. 
+[ERROR] 2017/10/31 18:37:44 初始化处理失败请检查配置，原因：To add an item to a group is not successful ,Reason：The item definition does not exist in the server address space. 
+[INFO] 2017/10/31 18:37:44 RFID连接成功. 

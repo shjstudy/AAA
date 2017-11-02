@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XCRFErrTable xmlns="http://tempuri.org/XCrfErrTable.xsd">
+  <!--ErrType-报错方式（自定义。辅助信息，与软件配合使用。演示软件中定义，1：弹出框报错；2：显示错误信息，不弹出框-->
+  <!--ErrCategory-错误类别（辅助说明错误的类别。1：读写器返回错误；2：API运行时产生的错误；3：操作超时）-->
+  <Item>
+    <Code>00</Code>
+    <Text>Operation Timeout</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--读写器系统错误代码表-->
+  <Item>
+    <Code>01</Code>
+    <Text>Reader FPGA/DSP software Version Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>02</Code>
+    <Text>Reader base band hardware Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>03</Code>
+    <Text>radio-frequency  board hardware Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>04</Code>
+    <Text>Reader system parameter table Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>05</Code>
+    <Text>Reader FPGA Self Test Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>06</Code>
+    <Text>Reader radio-frequency  board Self Test Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>07</Code>
+    <Text>Reader Ethernet Test Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>08</Code>
+    <Text>Reader Real Time Clock Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>09</Code>
+    <Text>Reader external memory Test Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0A</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0B</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0C</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0D</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0E</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>0F</Code>
+    <Text>The error belongs to this spectrum, but is unrecognizable by the READER or or occured for unknown reason</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--读写器操作错误代码表-->
+  <Item>
+    <Code>11</Code>
+    <Text>Reader Operation password Error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>12</Code>
+    <Text>Erroneous antenna Number!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>13</Code>
+    <Text>Reader is on test mode!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>14</Code>
+    <Text>Reader internal flash fail!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>15</Code>
+    <Text>Reader is on tag operation !</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>16</Code>
+    <Text>Reader operation error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>17</Code>
+    <Text>You have no legal power to operate  the READER（There is another one user has connected to and is using the READER）</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>18</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>19</Code>
+    <Text>Reader too hot.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1A</Code>
+    <Text>Antenna mismatch</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1B</Code>
+    <Text>RF power too low</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1C</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1D</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1E</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>1F</Code>
+    <Text>The error belongs to this spectrum, but is unrecognizable by the READER or occured for unknown reason</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--指令接收/数据传输错误代码表-->
+  <Item>
+    <Code>20</Code>
+    <Text>received command or data is incomplete!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>21</Code>
+    <Text>received command or data CRC check error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>22</Code>
+    <Text>Command type is not correspond to current reader type!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>23</Code>
+    <Text>Command type is not correspond to protocol of current tags!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>24</Code>
+    <Text>Command parameter table error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>25</Code>
+    <Text>Command data structure error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>26</Code>
+    <Text>Command error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>27</Code>
+    <Text>The READER is busy now. Please try again later.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>28</Code>
+    <Text>Freq error.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>29</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2A</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2B</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2C</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2D</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2E</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>2F</Code>
+    <Text>The error belongs to this spectrum, but is unrecognizable by the READER or occured for unknown reason</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--EPC标签操作错误代码表-->
+  <Item>
+    <Code>60</Code>
+    <Text>No tag response,or the tag is absent!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>61</Code>
+    <Text>operation storage is inexistent!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>62</Code>
+    <Text>Tag operation address overflow!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>63</Code>
+    <Text>operation storage is locked!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>64</Code>
+    <Text>Tag Access password error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>65</Code>
+    <Text>Tag destroy password error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>66</Code>
+    <Text>Operation is ended error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>67</Code>
+    <Text>Operation is error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>68</Code>
+    <Text>Tag is not initialized</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>69</Code>
+    <Text>Tag return unknown error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6A</Code>
+    <Text>Tag feedback: Power Deficiency.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6B</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6C</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6D</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6E</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>6F</Code>
+    <Text>The error belongs to this spectrum, but is unrecognizable by the READER or occured for unknown reason</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--ISO18000-6B标签操作错误代码表-->
+  <Item>
+    <Code>90</Code>
+    <Text>No tag response,or the tag is absent!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>91</Code>
+    <Text>Not support this command!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>92</Code>
+    <Text>The command can not be recognised.Maybe the command format is error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>93</Code>
+    <Text>Not support this option!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>94</Code>
+    <Text>Unknow error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>95</Code>
+    <Text>Can not access specified  block!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>96</Code>
+    <Text>The block is locked.It can not be locked again!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>97</Code>
+    <Text>The block is locked.The content cannot be changed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>98</Code>
+    <Text>Block programme failed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>99</Code>
+    <Text>Lock block failed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9A</Code>
+    <Text>Operation is not finished!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9B</Code>
+    <Text>Operation is not finished!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9C</Code>
+    <Text>CRC error!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9D</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9E</Code>
+    <Text>Reserve</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>9F</Code>
+    <Text>The error belongs to this spectrum, but is unrecognizable by the READER or occured for unknown reason</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>A0</Code>
+    <Text>Connection lost.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <!--XCRF-500系列错误代码表-->
+  <Item>
+    <Code>3F</Code>
+    <Text>Data check error.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>3A</Code>
+    <Text>Data error.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>  
+  <!--API运行错误代码表-->
+  <Item>
+    <Code>FF01</Code>
+    <Text>Errors.Please resend order!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF02</Code>
+    <Text>Send order failed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF03</Code>
+    <Text>Usb Process Error. Please send order again!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF04</Code>
+    <Text>This port is occupied!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF05</Code>
+    <Text>Send order failed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF06</Code>
+    <Text>Errors.Please choose the right serial number or restart the reader and program!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF07</Code>
+    <Text>Send order failed!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF08</Code>
+    <Text>No order!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF09</Code>
+    <Text>The network is disconnected.Please check!</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF10</Code>
+    <Text>Tcp closed for an exception.</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>1</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF11</Code>
+    <Text>ErrCode file does not exist!</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF12</Code>
+    <Text>通讯端口加载失败</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF13</Code>
+    <Text>创建Sysit.xml文件失败。</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF14</Code>
+    <Text>不能添加空节点。</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF15</Code>
+    <Text>目标节点已经存在。</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF16</Code>
+    <Text>目标节点不存在。</Text>
+    <ErrType>1</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF17</Code>
+    <Text>日志记录失败：不能使用被释放的资源</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF18</Code>
+    <Text>配置文件中不存在该读写器配置项。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF19</Code>
+    <Text>建立连接失败。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF20</Code>
+    <Text>RS232数据接收失败。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF21</Code>
+    <Text>发送数据失败。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF22</Code>
+    <Text>连接已断开。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF23</Code>
+    <Text>发送数据不能为空。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF24</Code>
+    <Text>可能有另外用户连接，当前连接作废。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF25</Code>
+    <Text>间歇读取异常退出。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF26</Code>
+    <Text>OnExecuting执行失败，指令中止执行。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+  <Item>
+    <Code>FF27</Code>
+    <Text>TCP端口被占用。</Text>
+    <ErrType>2</ErrType>
+    <ErrCategory>2</ErrCategory>
+  </Item>
+</XCRFErrTable>
