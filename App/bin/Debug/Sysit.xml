@@ -115,7 +115,7 @@
     <Port Type="TCPIP_Client" Protocol="IRP1">192.168.0.210:7086</Port>
     <UserConfig Protocol="IRP1">
       <ReaderType>800</ReaderType>
-      <ReadTag ReadMemoryBank="EPC_TID_UserData_6C" Antenna="129" IsLoop="false" TagNum="7">
+      <ReadTag ReadMemoryBank="EPC_6C" Antenna="129" IsLoop="true" TagNum="7">
         <StopType>800</StopType>
       </ReadTag>
     </UserConfig>
