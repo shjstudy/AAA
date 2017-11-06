@@ -53,46 +53,37 @@
     <ApplicationIcon>App.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Communication, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Communication">
       <HintPath>..\..\NewLib\RFID\Communication.dll</HintPath>
     </Reference>
-    <Reference Include="DataGridViewAutoFilter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="DataGridViewAutoFilter">
       <HintPath>..\..\NewLib\DataGridViewAutoFilter.dll</HintPath>
     </Reference>
-    <Reference Include="IDAL">
-      <HintPath>..\..\NewLib\IDAL.dll</HintPath>
-    </Reference>
-    <Reference Include="Invengo.Language, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Invengo.Language">
       <HintPath>..\..\NewLib\RFID\Invengo.Language.dll</HintPath>
     </Reference>
-    <Reference Include="IRP1, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="IRP1">
       <HintPath>..\..\NewLib\RFID\IRP1.dll</HintPath>
     </Reference>
-    <Reference Include="IServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="IServices">
       <HintPath>..\..\NewLib\IServices.dll</HintPath>
     </Reference>
-    <Reference Include="MCP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="MCP">
       <HintPath>..\..\NewLib\MCP.dll</HintPath>
     </Reference>
-    <Reference Include="MCP.Service.Siemens, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="MCP.Service.Siemens">
       <HintPath>..\..\NewLib\MCP.Service.Siemens.dll</HintPath>
+    </Reference>
+    <Reference Include="MCP.Service.TCP">
+      <HintPath>..\..\NewLib\MCP.Service.TCP.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\NewLib\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="OPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="OPC">
       <HintPath>..\..\NewLib\OPC.dll</HintPath>
     </Reference>
     <Reference Include="OpcRcw.Comn, Version=1.10.2.0, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
@@ -105,8 +96,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\NewLib\OpcRcw.Da.dll</HintPath>
     </Reference>
-    <Reference Include="RFIDInterface, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="RFIDInterface">
       <HintPath>..\..\NewLib\RFID\RFIDInterface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -125,8 +115,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Util">
       <HintPath>..\..\NewLib\Util.dll</HintPath>
     </Reference>
   </ItemGroup>
