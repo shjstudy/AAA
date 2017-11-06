@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SHELFNAME = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.pnlMain = new System.Windows.Forms.Panel();
@@ -102,6 +101,7 @@
             this.pnlMain.Controls.Add(this.pnlContent);
             this.pnlMain.Controls.Add(this.pnlTool);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1183, 505);
@@ -112,6 +112,7 @@
             this.pnlContent.Controls.Add(this.pnlData);
             this.pnlContent.Controls.Add(this.pnlChart);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlContent.Location = new System.Drawing.Point(0, 47);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(1183, 458);
@@ -141,7 +142,7 @@
             this.lblInfo.AutoSize = true;
             this.lblInfo.Location = new System.Drawing.Point(32, 34);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(167, 12);
+            this.lblInfo.Size = new System.Drawing.Size(161, 17);
             this.lblInfo.TabIndex = 1;
             this.lblInfo.Text = "正在准备货位数据，请稍候...";
             // 
@@ -177,27 +178,19 @@
             this.colQty,
             this.Column11});
             this.dgvMain.DataSource = this.bsMain;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMain.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMain.Location = new System.Drawing.Point(0, 0);
             this.dgvMain.MultiSelect = false;
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMain.RowHeadersWidth = 30;
             this.dgvMain.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvMain.RowTemplate.Height = 23;
@@ -311,6 +304,7 @@
             // 
             this.pnlChart.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlChart.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlChart.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlChart.Location = new System.Drawing.Point(0, 377);
             this.pnlChart.Name = "pnlChart";
             this.pnlChart.Size = new System.Drawing.Size(1183, 81);
@@ -380,6 +374,7 @@
             this.PColor.Controls.Add(this.label8);
             this.PColor.Controls.Add(this.label6);
             this.PColor.Controls.Add(this.label5);
+            this.PColor.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.PColor.Location = new System.Drawing.Point(236, 4);
             this.PColor.Name = "PColor";
             this.PColor.Size = new System.Drawing.Size(682, 38);
@@ -390,7 +385,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(318, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 56;
             this.label2.Text = "空货位";
             // 
@@ -408,7 +403,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(520, 13);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 12);
+            this.label18.Size = new System.Drawing.Size(56, 17);
             this.label18.TabIndex = 54;
             this.label18.Text = "入库锁定";
             // 
@@ -426,7 +421,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(425, 13);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 12);
+            this.label16.Size = new System.Drawing.Size(32, 17);
             this.label16.TabIndex = 52;
             this.label16.Text = "空箱";
             // 
@@ -444,7 +439,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(38, 13);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
+            this.label9.Size = new System.Drawing.Size(56, 17);
             this.label9.TabIndex = 46;
             this.label9.Text = "异常货位";
             // 
@@ -471,7 +466,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(136, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.Size = new System.Drawing.Size(56, 17);
             this.label7.TabIndex = 44;
             this.label7.Text = "禁用货位";
             // 
@@ -480,7 +475,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(232, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
+            this.label3.Size = new System.Drawing.Size(32, 17);
             this.label3.TabIndex = 40;
             this.label3.Text = "有货";
             // 
@@ -507,7 +502,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(617, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.Size = new System.Drawing.Size(56, 17);
             this.label5.TabIndex = 42;
             this.label5.Text = "出库锁定";
             // 

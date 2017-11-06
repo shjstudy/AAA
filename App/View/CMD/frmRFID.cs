@@ -29,7 +29,8 @@ namespace App.View.CMD
         private void frmProduct_Shown(object sender, EventArgs e)
         {
             for (int i = 1; i < this.dgvMain.Columns.Count; i++)
-                ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
+                if (this.dgvMain.Columns[i].DataPropertyName.ToLower().IndexOf("date") == -1)
+                    ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
             this.BindData("1=1");
             DataTable dt = Program.dtUserPermission;
             string filter = "SubModuleCode='MNU_M00A_00C' and OperatorCode='2'";

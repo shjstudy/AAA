@@ -223,7 +223,8 @@ namespace App.View.Task
             this.toolStrip_CategoryCode.SelectedIndex = 0;
             this.BindData();
             for (int i = 1; i < this.dgvMain.Columns.Count - 1; i++)
-                ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
+                if (this.dgvMain.Columns[i].DataPropertyName.ToLower().IndexOf("date") == -1)
+                    ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
 
             DataTable dt = Program.dtUserPermission;
             string filter = "SubModuleCode='MNU_M00B_00C' and OperatorCode='1'";

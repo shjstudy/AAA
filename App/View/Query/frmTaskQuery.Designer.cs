@@ -31,11 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.dgvMain = new System.Windows.Forms.DataGridView();
+            this.colTaskNo = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colBillTypeName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colStateDesc = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colTaskDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colStartDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colFinishedDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colCellCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colCellName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colPalletBarCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colProductCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colProductName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colCategoryCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colSpec = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.colQty = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.bsMain = new System.Windows.Forms.BindingSource(this.components);
             this.pnlTool = new System.Windows.Forms.Panel();
             this.chk1 = new System.Windows.Forms.CheckBox();
@@ -59,20 +71,6 @@
             this.txtProductCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.colTaskNo = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colBillTypeName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colStateDesc = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colTaskDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colStartDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colFinishedDate = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colCellCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colCellName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colPalletBarCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colProductCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colProductName = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colCategoryCode = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colSpec = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.colQty = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.pnlMain.SuspendLayout();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
@@ -87,6 +85,7 @@
             this.pnlMain.Controls.Add(this.pnlTool);
             this.pnlMain.Controls.Add(this.pnlBottom);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1166, 421);
@@ -135,33 +134,144 @@
             this.colSpec,
             this.colQty});
             this.dgvMain.DataSource = this.bsMain;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMain.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMain.Location = new System.Drawing.Point(0, 0);
             this.dgvMain.MultiSelect = false;
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMain.RowHeadersWidth = 20;
             this.dgvMain.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvMain.RowTemplate.Height = 23;
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMain.Size = new System.Drawing.Size(1166, 328);
             this.dgvMain.TabIndex = 7;
+            // 
+            // colTaskNo
+            // 
+            this.colTaskNo.DataPropertyName = "TaskNo";
+            this.colTaskNo.FilteringEnabled = false;
+            this.colTaskNo.HeaderText = "任务号";
+            this.colTaskNo.Name = "colTaskNo";
+            this.colTaskNo.ReadOnly = true;
+            // 
+            // colBillTypeName
+            // 
+            this.colBillTypeName.DataPropertyName = "BillTypeName";
+            this.colBillTypeName.FilteringEnabled = false;
+            this.colBillTypeName.HeaderText = "任务类型";
+            this.colBillTypeName.Name = "colBillTypeName";
+            this.colBillTypeName.ReadOnly = true;
+            // 
+            // colStateDesc
+            // 
+            this.colStateDesc.DataPropertyName = "StateDesc";
+            this.colStateDesc.FilteringEnabled = false;
+            this.colStateDesc.HeaderText = "状态";
+            this.colStateDesc.Name = "colStateDesc";
+            this.colStateDesc.ReadOnly = true;
+            // 
+            // colTaskDate
+            // 
+            this.colTaskDate.DataPropertyName = "TaskDate";
+            this.colTaskDate.FilteringEnabled = false;
+            this.colTaskDate.HeaderText = "作业时间";
+            this.colTaskDate.Name = "colTaskDate";
+            this.colTaskDate.ReadOnly = true;
+            // 
+            // colStartDate
+            // 
+            this.colStartDate.DataPropertyName = "StartDate";
+            this.colStartDate.FilteringEnabled = false;
+            this.colStartDate.HeaderText = "开始时间";
+            this.colStartDate.Name = "colStartDate";
+            this.colStartDate.ReadOnly = true;
+            // 
+            // colFinishedDate
+            // 
+            this.colFinishedDate.DataPropertyName = "FinishDate";
+            this.colFinishedDate.FilteringEnabled = false;
+            this.colFinishedDate.HeaderText = "完成时间";
+            this.colFinishedDate.Name = "colFinishedDate";
+            this.colFinishedDate.ReadOnly = true;
+            // 
+            // colCellCode
+            // 
+            this.colCellCode.DataPropertyName = "CellCode";
+            this.colCellCode.FilteringEnabled = false;
+            this.colCellCode.HeaderText = "货位编号";
+            this.colCellCode.Name = "colCellCode";
+            this.colCellCode.ReadOnly = true;
+            this.colCellCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colCellCode.Width = 110;
+            // 
+            // colCellName
+            // 
+            this.colCellName.DataPropertyName = "CellName";
+            this.colCellName.FilteringEnabled = false;
+            this.colCellName.HeaderText = "货位名称";
+            this.colCellName.Name = "colCellName";
+            this.colCellName.ReadOnly = true;
+            this.colCellName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colCellName.Width = 110;
+            // 
+            // colPalletBarCode
+            // 
+            this.colPalletBarCode.DataPropertyName = "PalletBarCode";
+            this.colPalletBarCode.FilteringEnabled = false;
+            this.colPalletBarCode.HeaderText = "料箱号";
+            this.colPalletBarCode.Name = "colPalletBarCode";
+            this.colPalletBarCode.ReadOnly = true;
+            this.colPalletBarCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colPalletBarCode.Width = 90;
+            // 
+            // colProductCode
+            // 
+            this.colProductCode.DataPropertyName = "ProductCode";
+            this.colProductCode.FilteringEnabled = false;
+            this.colProductCode.HeaderText = "产品编号";
+            this.colProductCode.Name = "colProductCode";
+            this.colProductCode.ReadOnly = true;
+            this.colProductCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colProductCode.Width = 110;
+            // 
+            // colProductName
+            // 
+            this.colProductName.DataPropertyName = "ProductName";
+            this.colProductName.FilteringEnabled = false;
+            this.colProductName.HeaderText = "产品名称";
+            this.colProductName.Name = "colProductName";
+            this.colProductName.ReadOnly = true;
+            this.colProductName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colProductName.Width = 110;
+            // 
+            // colCategoryCode
+            // 
+            this.colCategoryCode.DataPropertyName = "CategoryCode";
+            this.colCategoryCode.FilteringEnabled = false;
+            this.colCategoryCode.HeaderText = "产品类别";
+            this.colCategoryCode.Name = "colCategoryCode";
+            this.colCategoryCode.ReadOnly = true;
+            this.colCategoryCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colCategoryCode.Width = 110;
+            // 
+            // colSpec
+            // 
+            this.colSpec.DataPropertyName = "Spec";
+            this.colSpec.FilteringEnabled = false;
+            this.colSpec.HeaderText = "规格";
+            this.colSpec.Name = "colSpec";
+            this.colSpec.ReadOnly = true;
+            this.colSpec.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colSpec.Width = 110;
+            // 
+            // colQty
+            // 
+            this.colQty.DataPropertyName = "Qty";
+            this.colQty.FilteringEnabled = false;
+            this.colQty.HeaderText = "数量";
+            this.colQty.Name = "colQty";
+            this.colQty.ReadOnly = true;
+            this.colQty.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // pnlTool
             // 
@@ -183,6 +293,7 @@
             this.pnlTool.Controls.Add(this.txtProductCode);
             this.pnlTool.Controls.Add(this.label1);
             this.pnlTool.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTool.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlTool.Location = new System.Drawing.Point(0, 0);
             this.pnlTool.Name = "pnlTool";
             this.pnlTool.Size = new System.Drawing.Size(1166, 37);
@@ -404,133 +515,6 @@
             this.pnlBottom.Size = new System.Drawing.Size(1166, 56);
             this.pnlBottom.TabIndex = 2;
             this.pnlBottom.Visible = false;
-            // 
-            // colTaskNo
-            // 
-            this.colTaskNo.DataPropertyName = "TaskNo";
-            this.colTaskNo.FilteringEnabled = false;
-            this.colTaskNo.HeaderText = "任务号";
-            this.colTaskNo.Name = "colTaskNo";
-            this.colTaskNo.ReadOnly = true;
-            // 
-            // colBillTypeName
-            // 
-            this.colBillTypeName.DataPropertyName = "BillTypeName";
-            this.colBillTypeName.FilteringEnabled = false;
-            this.colBillTypeName.HeaderText = "任务类型";
-            this.colBillTypeName.Name = "colBillTypeName";
-            this.colBillTypeName.ReadOnly = true;
-            // 
-            // colStateDesc
-            // 
-            this.colStateDesc.DataPropertyName = "StateDesc";
-            this.colStateDesc.FilteringEnabled = false;
-            this.colStateDesc.HeaderText = "状态";
-            this.colStateDesc.Name = "colStateDesc";
-            this.colStateDesc.ReadOnly = true;
-            // 
-            // colTaskDate
-            // 
-            this.colTaskDate.DataPropertyName = "TaskDate";
-            this.colTaskDate.FilteringEnabled = false;
-            this.colTaskDate.HeaderText = "作业时间";
-            this.colTaskDate.Name = "colTaskDate";
-            this.colTaskDate.ReadOnly = true;
-            // 
-            // colStartDate
-            // 
-            this.colStartDate.DataPropertyName = "StartDate";
-            this.colStartDate.FilteringEnabled = false;
-            this.colStartDate.HeaderText = "开始时间";
-            this.colStartDate.Name = "colStartDate";
-            this.colStartDate.ReadOnly = true;
-            // 
-            // colFinishedDate
-            // 
-            this.colFinishedDate.DataPropertyName = "FinishDate";
-            this.colFinishedDate.FilteringEnabled = false;
-            this.colFinishedDate.HeaderText = "完成时间";
-            this.colFinishedDate.Name = "colFinishedDate";
-            this.colFinishedDate.ReadOnly = true;
-            // 
-            // colCellCode
-            // 
-            this.colCellCode.DataPropertyName = "CellCode";
-            this.colCellCode.FilteringEnabled = false;
-            this.colCellCode.HeaderText = "货位编号";
-            this.colCellCode.Name = "colCellCode";
-            this.colCellCode.ReadOnly = true;
-            this.colCellCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colCellCode.Width = 110;
-            // 
-            // colCellName
-            // 
-            this.colCellName.DataPropertyName = "CellName";
-            this.colCellName.FilteringEnabled = false;
-            this.colCellName.HeaderText = "货位名称";
-            this.colCellName.Name = "colCellName";
-            this.colCellName.ReadOnly = true;
-            this.colCellName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colCellName.Width = 110;
-            // 
-            // colPalletBarCode
-            // 
-            this.colPalletBarCode.DataPropertyName = "PalletBarCode";
-            this.colPalletBarCode.FilteringEnabled = false;
-            this.colPalletBarCode.HeaderText = "料箱号";
-            this.colPalletBarCode.Name = "colPalletBarCode";
-            this.colPalletBarCode.ReadOnly = true;
-            this.colPalletBarCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colPalletBarCode.Width = 90;
-            // 
-            // colProductCode
-            // 
-            this.colProductCode.DataPropertyName = "ProductCode";
-            this.colProductCode.FilteringEnabled = false;
-            this.colProductCode.HeaderText = "产品编号";
-            this.colProductCode.Name = "colProductCode";
-            this.colProductCode.ReadOnly = true;
-            this.colProductCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colProductCode.Width = 110;
-            // 
-            // colProductName
-            // 
-            this.colProductName.DataPropertyName = "ProductName";
-            this.colProductName.FilteringEnabled = false;
-            this.colProductName.HeaderText = "产品名称";
-            this.colProductName.Name = "colProductName";
-            this.colProductName.ReadOnly = true;
-            this.colProductName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colProductName.Width = 110;
-            // 
-            // colCategoryCode
-            // 
-            this.colCategoryCode.DataPropertyName = "CategoryCode";
-            this.colCategoryCode.FilteringEnabled = false;
-            this.colCategoryCode.HeaderText = "产品类别";
-            this.colCategoryCode.Name = "colCategoryCode";
-            this.colCategoryCode.ReadOnly = true;
-            this.colCategoryCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colCategoryCode.Width = 110;
-            // 
-            // colSpec
-            // 
-            this.colSpec.DataPropertyName = "Spec";
-            this.colSpec.FilteringEnabled = false;
-            this.colSpec.HeaderText = "规格";
-            this.colSpec.Name = "colSpec";
-            this.colSpec.ReadOnly = true;
-            this.colSpec.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colSpec.Width = 110;
-            // 
-            // colQty
-            // 
-            this.colQty.DataPropertyName = "Qty";
-            this.colQty.FilteringEnabled = false;
-            this.colQty.HeaderText = "数量";
-            this.colQty.Name = "colQty";
-            this.colQty.ReadOnly = true;
-            this.colQty.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // frmTaskQuery
             // 

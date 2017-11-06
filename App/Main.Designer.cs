@@ -848,7 +848,6 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("宋体", 9F);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";

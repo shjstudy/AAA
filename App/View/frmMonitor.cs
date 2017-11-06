@@ -377,45 +377,42 @@ namespace App.View
         }
 
 
-        private void Send2Cmd(int CmdType,string DeviceNo)
+        private void Send2Cmd(int CmdType)
         {
-
-            string serviceName = "PLC03" + DeviceNo.Substring(0,2);
-            string carNo = DeviceNo.Substring(2, 2);
-            int[] cellAddr = new int[12];
-
-            object obj = MCP.ObjectUtil.GetObject(base.Context.ProcessDispatcher.WriteToService(serviceName, "CarAlarm" + carNo)).ToString();
+            string serviceName = "CranePLC01";
+            object obj = MCP.ObjectUtil.GetObject(base.Context.ProcessDispatcher.WriteToService(serviceName, "CraneAlarmCode")).ToString();
             if (obj.ToString() != "0")
             {
-                if (CmdType == 0)
-                    cellAddr[1] = 1;
-                else
-                    cellAddr[2] = 1;
-                cellAddr[10] = int.Parse(carNo);
-                base.Context.ProcessDispatcher.WriteToService(serviceName, "TaskAddress", cellAddr);
-                base.Context.ProcessDispatcher.WriteToService(serviceName, "WriteFinished", 1);
+                string ItemName = "Stop";
+                int Value = 1;
+                string MSG = "堆垛机下发急停命令";
+                if (CmdType == 1)
+                {
+                    ItemName = "TaskType";
+                    Value = 5;
+                    MSG="已给堆垛机下发取消任务指令,任务号:" + this.txtTaskNo01.Text;
+                }
 
-                MCP.Logger.Info("已给设备" + DeviceNo + "下发取消任务指令");
+                base.Context.ProcessDispatcher.WriteToService(serviceName, ItemName, Value);
+                base.Context.ProcessDispatcher.WriteToService(serviceName, "WriteFinished", 1);
+                Logger.Info(MSG);
             }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            string name = (sender as Button).Name;
-            string DeviceNo = name.Substring(9, 4);
-            Send2Cmd(0,DeviceNo);
+            Send2Cmd(1);
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            string name = (sender as Button).Name;
-            string DeviceNo = name.Substring(7, 4);
-            Send2Cmd(1, DeviceNo);
+            Send2Cmd(0);
         }
 
         private void btnClearAlarm_Click(object sender, EventArgs e)
         {
-
+            Context.ProcessDispatcher.WriteToService("CranePLC01", "Reset", 1);
+            Logger.Info("堆垛机解警");
         }
 
     }

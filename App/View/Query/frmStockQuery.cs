@@ -27,6 +27,7 @@ namespace App.View.Query
         private void frmStockQuery_Shown(object sender, EventArgs e)
         {
             for (int i = 0; i < this.dgvMain.Columns.Count - 1; i++)
+                if (this.dgvMain.Columns[i].DataPropertyName.ToLower().IndexOf("date") == -1)
                 ((DataGridViewAutoFilterTextBoxColumn)this.dgvMain.Columns[i]).FilteringEnabled = true;
 
             BindDropDown();
