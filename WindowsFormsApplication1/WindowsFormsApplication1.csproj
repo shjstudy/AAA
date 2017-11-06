@@ -38,9 +38,6 @@
     <Reference Include="Communication">
       <HintPath>..\..\Lib\RFID\Communication.dll</HintPath>
     </Reference>
-    <Reference Include="IDAL">
-      <HintPath>..\..\..\Lib\IDAL.dll</HintPath>
-    </Reference>
     <Reference Include="Invengo.Language">
       <HintPath>..\..\Lib\RFID\Invengo.Language.dll</HintPath>
     </Reference>
@@ -48,10 +45,10 @@
       <HintPath>..\..\Lib\RFID\IRP1.dll</HintPath>
     </Reference>
     <Reference Include="IServices">
-      <HintPath>..\..\..\Lib\IServices.dll</HintPath>
+      <HintPath>..\..\NewLib\IServices.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\NewLib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RFIDInterface">
       <HintPath>..\..\Lib\RFID\RFIDInterface.dll</HintPath>
@@ -70,13 +67,10 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Util">
-      <HintPath>..\..\..\Lib\Util.dll</HintPath>
+      <HintPath>..\..\NewLib\Util.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\BLLBase.cs" />
-    <Compile Include="BLL\Server.cs" />
-    <Compile Include="BLL\UserBll.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
