@@ -151,7 +151,7 @@
             // 
             this.dgvMain.AllowUserToAddRows = false;
             this.dgvMain.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSkyBlue;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvMain.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMain.AutoGenerateColumns = false;

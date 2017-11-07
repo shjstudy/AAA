@@ -79,7 +79,6 @@
             this.colAlarmDesc = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.bsMain = new System.Windows.Forms.BindingSource(this.components);
             this.lbLog = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -447,7 +446,7 @@
             // 
             this.dgvMain.AllowUserToAddRows = false;
             this.dgvMain.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.dgvMain.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMain.AutoGenerateColumns = false;
             this.dgvMain.BackgroundColor = System.Drawing.Color.WhiteSmoke;
@@ -606,7 +605,6 @@
             // 
             this.lbLog.BackColor = System.Drawing.SystemColors.Window;
             this.lbLog.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
             this.lbLog.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -621,19 +619,14 @@
             this.lbLog.UseCompatibleStateImageBehavior = false;
             this.lbLog.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Header";
-            this.columnHeader1.Width = 80;
-            // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "DateTime";
+            this.columnHeader2.Text = "时间";
             this.columnHeader2.Width = 150;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Log";
+            this.columnHeader3.Text = "日志";
             this.columnHeader3.Width = 1200;
             // 
             // menuStrip1
@@ -880,7 +873,6 @@
         private System.Windows.Forms.ToolStripMenuItem OutStockToolStripMenuItem;
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.ListView lbLog;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Monitor;

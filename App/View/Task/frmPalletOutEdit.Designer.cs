@@ -275,7 +275,7 @@
             this.dgView.AllowUserToAddRows = false;
             this.dgView.AllowUserToDeleteRows = false;
             this.dgView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSkyBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgView.AutoGenerateColumns = false;

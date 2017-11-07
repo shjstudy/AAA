@@ -134,7 +134,7 @@
             // 
             this.dgvMain.AllowUserToAddRows = false;
             this.dgvMain.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSkyBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvMain.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMain.AutoGenerateColumns = false;
@@ -276,7 +276,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.AutoGenerateColumns = false;

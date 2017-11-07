@@ -370,7 +370,7 @@ namespace App
                     this.lbLog.BeginUpdate();
                     if (args.LogLevel != LogLevel.DEBUG)
                     {
-                        ListViewItem item = new ListViewItem(new string[] { msg1, msg2, msg3 });
+                        ListViewItem item = new ListViewItem(new string[] { msg2, msg3 });
                         if (msg1.Contains("[ERROR]"))
                         {
                             //item.ForeColor = Color.Red;
@@ -821,7 +821,7 @@ namespace App
                             if (i % 2 == 0)
                                 this.dgvMain.Rows[i].DefaultCellStyle.BackColor = Color.White;
                             else
-                                this.dgvMain.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(192, 255, 192);
+                                this.dgvMain.Rows[i].DefaultCellStyle.BackColor = Color.LightSkyBlue;
 
                         }
                     }
