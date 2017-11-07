@@ -396,8 +396,8 @@ namespace App
             try
             {
                 string path = "";
-                CreateDirectory("日志");
-                path = "日志";
+                CreateDirectory("log");
+                path = "log";
                 path = path + @"/" + DateTime.Now.ToString().Substring(0, 4).Trim();
                 CreateDirectory(path);
                 path = path + @"/" + DateTime.Now.ToString("yyyy-MM-dd").Substring(0, 7).Trim();
