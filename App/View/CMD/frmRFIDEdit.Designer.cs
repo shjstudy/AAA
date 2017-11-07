@@ -150,7 +150,7 @@
             this.txtRFIDCode.Name = "txtRFIDCode";
             this.txtRFIDCode.ReadOnly = true;
             this.txtRFIDCode.Size = new System.Drawing.Size(302, 23);
-            this.txtRFIDCode.TabIndex = 18;
+            this.txtRFIDCode.TabIndex = 1;
             // 
             // lblProductName
             // 

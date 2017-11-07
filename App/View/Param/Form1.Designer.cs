@@ -43,16 +43,17 @@ namespace App.View.Param
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.button1.Location = new System.Drawing.Point(22, 48);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 32);
+            this.button1.Size = new System.Drawing.Size(112, 26);
             this.button1.TabIndex = 0;
             this.button1.Text = "更新库存消息";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,11 +61,11 @@ namespace App.View.Param
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(22, 122);
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.button2.Location = new System.Drawing.Point(22, 124);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 32);
+            this.button2.Size = new System.Drawing.Size(112, 26);
             this.button2.TabIndex = 1;
             this.button2.Text = "堆垛机状态";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,10 +73,10 @@ namespace App.View.Param
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(22, 194);
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.button3.Location = new System.Drawing.Point(23, 195);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 33);
+            this.button3.Size = new System.Drawing.Size(112, 27);
             this.button3.TabIndex = 2;
             this.button3.Text = "堆垛机报警信息";
             this.button3.UseVisualStyleBackColor = true;
@@ -117,7 +118,7 @@ namespace App.View.Param
             this.groupBox1.Controls.Add(this.txtResult);
             this.groupBox1.Location = new System.Drawing.Point(867, -1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 454);
+            this.groupBox1.Size = new System.Drawing.Size(200, 385);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "反馈结果";
@@ -129,7 +130,7 @@ namespace App.View.Param
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResult.Size = new System.Drawing.Size(188, 414);
+            this.txtResult.Size = new System.Drawing.Size(188, 325);
             this.txtResult.TabIndex = 6;
             // 
             // textBox4
@@ -154,21 +155,21 @@ namespace App.View.Param
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(22, 343);
+            this.button5.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.button5.Location = new System.Drawing.Point(22, 345);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 33);
+            this.button5.Size = new System.Drawing.Size(112, 27);
             this.button5.TabIndex = 10;
             this.button5.Text = "AGV报警信息";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(22, 272);
+            this.button4.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.button4.Location = new System.Drawing.Point(22, 273);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 30);
+            this.button4.Size = new System.Drawing.Size(112, 24);
             this.button4.TabIndex = 9;
             this.button4.Text = "AGV状态";
             this.button4.UseVisualStyleBackColor = true;
@@ -186,20 +187,34 @@ namespace App.View.Param
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.button6.Location = new System.Drawing.Point(22, 422);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(161, 33);
+            this.button6.Size = new System.Drawing.Size(112, 27);
             this.button6.TabIndex = 13;
             this.button6.Text = "补货任务反馈";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Visible = false;
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.button7.Location = new System.Drawing.Point(1114, 11);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(112, 32);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "关闭";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 458);
+            this.ClientSize = new System.Drawing.Size(1255, 458);
+            this.ControlBox = false;
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox4);
@@ -215,7 +230,7 @@ namespace App.View.Param
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "接口测试";
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -240,6 +255,7 @@ namespace App.View.Param
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

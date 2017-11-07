@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ToolStripMenuItemDelCraneTask = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemStateChange = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem0 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +43,12 @@
             this.ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemDelCraneTask = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemReassign = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemReassignConvey = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemReassignAGV = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlTab = new System.Windows.Forms.Panel();
             this.tabForm = new System.Windows.Forms.TabControl();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -103,10 +107,6 @@
             this.ToolStripMenuItem_Group = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Power = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_ChangPwd = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemReassignConvey = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemReassignAGV = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.pnlTab.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -130,15 +130,7 @@
             this.ToolStripMenuItemReassignConvey,
             this.ToolStripMenuItemReassignAGV});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 136);
-            // 
-            // ToolStripMenuItemDelCraneTask
-            // 
-            this.ToolStripMenuItemDelCraneTask.Name = "ToolStripMenuItemDelCraneTask";
-            this.ToolStripMenuItemDelCraneTask.Size = new System.Drawing.Size(160, 22);
-            this.ToolStripMenuItemDelCraneTask.Text = "取消堆垛机任务";
-            this.ToolStripMenuItemDelCraneTask.Visible = false;
-            this.ToolStripMenuItemDelCraneTask.Click += new System.EventHandler(this.ToolStripMenuItemDelCraneTask_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 114);
             // 
             // ToolStripMenuItemStateChange
             // 
@@ -162,69 +154,89 @@
             // ToolStripMenuItem0
             // 
             this.ToolStripMenuItem0.Name = "ToolStripMenuItem0";
-            this.ToolStripMenuItem0.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem0.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem0.Text = "等待";
             this.ToolStripMenuItem0.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem1
             // 
             this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
-            this.ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem1.Text = "输送线入库";
             this.ToolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem2
             // 
             this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
-            this.ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem2.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem2.Text = "到达入库站台";
             this.ToolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem3
             // 
             this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
-            this.ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem3.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem3.Text = "上架执行";
             this.ToolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem4
             // 
             this.ToolStripMenuItem4.Name = "ToolStripMenuItem4";
-            this.ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem4.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem4.Text = "下架执行";
             this.ToolStripMenuItem4.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem5
             // 
             this.ToolStripMenuItem5.Name = "ToolStripMenuItem5";
-            this.ToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem5.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem5.Text = "到达出库站台";
             // 
             // ToolStripMenuItem6
             // 
             this.ToolStripMenuItem6.Name = "ToolStripMenuItem6";
-            this.ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem6.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem6.Text = "输送线出库";
             // 
             // ToolStripMenuItem7
             // 
             this.ToolStripMenuItem7.Name = "ToolStripMenuItem7";
-            this.ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem7.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem7.Text = "完成";
             this.ToolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem8
             // 
             this.ToolStripMenuItem8.Name = "ToolStripMenuItem8";
-            this.ToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem8.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem8.Text = "盘点中";
             // 
             // ToolStripMenuItem9
             // 
             this.ToolStripMenuItem9.Name = "ToolStripMenuItem9";
-            this.ToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem9.Size = new System.Drawing.Size(148, 22);
             this.ToolStripMenuItem9.Text = "取消";
             this.ToolStripMenuItem9.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            // 
+            // ToolStripMenuItem10
+            // 
+            this.ToolStripMenuItem10.Name = "ToolStripMenuItem10";
+            this.ToolStripMenuItem10.Size = new System.Drawing.Size(148, 22);
+            this.ToolStripMenuItem10.Text = "到达出库口";
+            // 
+            // ToolStripMenuItem11
+            // 
+            this.ToolStripMenuItem11.Name = "ToolStripMenuItem11";
+            this.ToolStripMenuItem11.Size = new System.Drawing.Size(148, 22);
+            this.ToolStripMenuItem11.Text = "AGV搬运";
+            // 
+            // ToolStripMenuItemDelCraneTask
+            // 
+            this.ToolStripMenuItemDelCraneTask.Name = "ToolStripMenuItemDelCraneTask";
+            this.ToolStripMenuItemDelCraneTask.Size = new System.Drawing.Size(160, 22);
+            this.ToolStripMenuItemDelCraneTask.Text = "取消堆垛机任务";
+            this.ToolStripMenuItemDelCraneTask.Visible = false;
+            this.ToolStripMenuItemDelCraneTask.Click += new System.EventHandler(this.ToolStripMenuItemDelCraneTask_Click);
             // 
             // ToolStripMenuItemReassign
             // 
@@ -232,6 +244,20 @@
             this.ToolStripMenuItemReassign.Size = new System.Drawing.Size(160, 22);
             this.ToolStripMenuItemReassign.Text = "重下堆垛机任务";
             this.ToolStripMenuItemReassign.Click += new System.EventHandler(this.ToolStripMenuItemReassign_Click);
+            // 
+            // ToolStripMenuItemReassignConvey
+            // 
+            this.ToolStripMenuItemReassignConvey.Name = "ToolStripMenuItemReassignConvey";
+            this.ToolStripMenuItemReassignConvey.Size = new System.Drawing.Size(160, 22);
+            this.ToolStripMenuItemReassignConvey.Text = "重下输送线任务";
+            this.ToolStripMenuItemReassignConvey.Click += new System.EventHandler(this.ToolStripMenuItemReassignConvey_Click);
+            // 
+            // ToolStripMenuItemReassignAGV
+            // 
+            this.ToolStripMenuItemReassignAGV.Name = "ToolStripMenuItemReassignAGV";
+            this.ToolStripMenuItemReassignAGV.Size = new System.Drawing.Size(160, 22);
+            this.ToolStripMenuItemReassignAGV.Text = "重下AGV任务";
+            this.ToolStripMenuItemReassignAGV.Click += new System.EventHandler(this.ToolStripMenuItemReassignAGV_Click);
             // 
             // pnlTab
             // 
@@ -283,7 +309,7 @@
             this.toolStripButton_Scan.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_Scan.Name = "toolStripButton_Scan";
             this.toolStripButton_Scan.Size = new System.Drawing.Size(80, 50);
-            this.toolStripButton_Scan.Text = "读码入库";
+            this.toolStripButton_Scan.Text = "组盘入库";
             this.toolStripButton_Scan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton_Scan.Click += new System.EventHandler(this.toolStripButton_Scan_Click);
             // 
@@ -637,28 +663,28 @@
             // ProductClassToolStripMenuItem
             // 
             this.ProductClassToolStripMenuItem.Name = "ProductClassToolStripMenuItem";
-            this.ProductClassToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ProductClassToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.ProductClassToolStripMenuItem.Text = "产品类别设定";
             this.ProductClassToolStripMenuItem.Click += new System.EventHandler(this.ProductClassToolStripMenuItem_Click);
             // 
             // ProductToolStripMenuItem
             // 
             this.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem";
-            this.ProductToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ProductToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.ProductToolStripMenuItem.Text = "产品资料设定";
             this.ProductToolStripMenuItem.Click += new System.EventHandler(this.ProductToolStripMenuItem_Click);
             // 
             // RFIDToolStripMenuItem
             // 
             this.RFIDToolStripMenuItem.Name = "RFIDToolStripMenuItem";
-            this.RFIDToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.RFIDToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.RFIDToolStripMenuItem.Text = "RFID资料设定";
             this.RFIDToolStripMenuItem.Click += new System.EventHandler(this.RFIDToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem_Interface
             // 
             this.ToolStripMenuItem_Interface.Name = "ToolStripMenuItem_Interface";
-            this.ToolStripMenuItem_Interface.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_Interface.Size = new System.Drawing.Size(151, 22);
             this.ToolStripMenuItem_Interface.Text = "接口资料测试";
             this.ToolStripMenuItem_Interface.Click += new System.EventHandler(this.ToolStripMenuItem_Interface_Click);
             // 
@@ -812,32 +838,6 @@
             this.ToolStripMenuItem_ChangPwd.Size = new System.Drawing.Size(136, 22);
             this.ToolStripMenuItem_ChangPwd.Text = "密码修改";
             this.ToolStripMenuItem_ChangPwd.Click += new System.EventHandler(this.ToolStripMenuItem_ChangPwd_Click);
-            // 
-            // ToolStripMenuItemReassignConvey
-            // 
-            this.ToolStripMenuItemReassignConvey.Name = "ToolStripMenuItemReassignConvey";
-            this.ToolStripMenuItemReassignConvey.Size = new System.Drawing.Size(160, 22);
-            this.ToolStripMenuItemReassignConvey.Text = "重下输送线任务";
-            this.ToolStripMenuItemReassignConvey.Click += new System.EventHandler(this.ToolStripMenuItemReassignConvey_Click);
-            // 
-            // ToolStripMenuItemReassignAGV
-            // 
-            this.ToolStripMenuItemReassignAGV.Name = "ToolStripMenuItemReassignAGV";
-            this.ToolStripMenuItemReassignAGV.Size = new System.Drawing.Size(160, 22);
-            this.ToolStripMenuItemReassignAGV.Text = "重下AGV任务";
-            this.ToolStripMenuItemReassignAGV.Click += new System.EventHandler(this.ToolStripMenuItemReassignAGV_Click);
-            // 
-            // ToolStripMenuItem10
-            // 
-            this.ToolStripMenuItem10.Name = "ToolStripMenuItem10";
-            this.ToolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItem10.Text = "到达出库口";
-            // 
-            // ToolStripMenuItem11
-            // 
-            this.ToolStripMenuItem11.Name = "ToolStripMenuItem11";
-            this.ToolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItem11.Text = "AGV搬运";
             // 
             // Main
             // 

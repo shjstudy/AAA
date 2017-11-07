@@ -99,7 +99,7 @@
             this.txtProductCode.Location = new System.Drawing.Point(75, 48);
             this.txtProductCode.Name = "txtProductCode";
             this.txtProductCode.Size = new System.Drawing.Size(80, 25);
-            this.txtProductCode.TabIndex = 80;
+            this.txtProductCode.TabIndex = 1;
             this.txtProductCode.TextChanged += new System.EventHandler(this.txtProductCode_TextChanged);
             this.txtProductCode.DoubleClick += new System.EventHandler(this.txtProductCode_DoubleClick);
             // 
@@ -184,7 +184,7 @@
             this.MinimizeBox = false;
             this.Name = "frmInStockTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "扫码入库";
+            this.Text = "组盘入库";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInStockTask_FormClosing);
             this.Shown += new System.EventHandler(this.frmInStockTask_Shown);
             this.ResumeLayout(false);

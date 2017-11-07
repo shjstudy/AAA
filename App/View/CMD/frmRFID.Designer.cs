@@ -195,6 +195,7 @@
             this.toolStripButton_Close.Size = new System.Drawing.Size(60, 50);
             this.toolStripButton_Close.Text = "关闭";
             this.toolStripButton_Close.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton_Close.Click += new System.EventHandler(this.toolStripButton_Close_Click);
             // 
             // toolStripButton_Edit
             // 

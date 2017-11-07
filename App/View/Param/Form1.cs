@@ -124,6 +124,11 @@ namespace App.View.Param
             httpWebResponse.Close();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
        
        
         

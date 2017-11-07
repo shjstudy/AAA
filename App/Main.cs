@@ -62,10 +62,10 @@ namespace App
                 ContextInitialize initialize = new ContextInitialize();
                 initialize.InitializeContext(context);
 
-            
 
-                //View.frmMonitor f = new View.frmMonitor();
-                //ShowForm(f);
+
+                View.frmMonitor f = new View.frmMonitor();
+                ShowForm(f);
             }
             catch (Exception ee)
             {
