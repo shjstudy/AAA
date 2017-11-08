@@ -77,9 +77,9 @@ namespace App.Account
                  string filter = "SubModuleCode='MNU_W00C_00E' and OperatorCode='4'";
                  DataRow[] drs = dt.Select(filter);
                  if (drs.Length <= 0)
-                     this.toolStripButton_Save.Visible = false;
+                     this.toolStripButton_Save.Enabled = false;
                  else
-                     this.toolStripButton_Save.Visible = true;
+                     this.toolStripButton_Save.Enabled = true;
                   
              }
              blnBindCheck = true;
