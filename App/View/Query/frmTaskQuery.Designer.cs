@@ -524,7 +524,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
             this.Name = "frmTaskQuery";
-            this.Text = "现有库存查询";
+            this.Text = "任务查询";
             this.Shown += new System.EventHandler(this.frmStockQuery_Shown);
             this.pnlMain.ResumeLayout(false);
             this.pnlContent.ResumeLayout(false);

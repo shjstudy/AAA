@@ -305,7 +305,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
             this.Name = "frmSafeQtyQuery";
-            this.Text = "现有库存查询";
+            this.Text = "安全存量预警";
             this.Shown += new System.EventHandler(this.frmStockQuery_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).EndInit();
             this.pnlMain.ResumeLayout(false);
