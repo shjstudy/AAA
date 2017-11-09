@@ -29,7 +29,7 @@ namespace App.Dispatching.Process
                         {
                             DataParameter[] param = new DataParameter[] { new DataParameter("{0}", "State='2',Covey_FinishDate=getdate()"), new DataParameter("{1}", string.Format("TaskNo='{0}'", TaskNo)) };
                             bll.ExecNonQueryTran("WCS.UpdateTaskState", param);
-                            Logger.Info("任务号:" + TaskNo + " 聊箱号:" + PalletBarcode + " 到达入库站台：" + StationNo);
+                            Logger.Info("任务号:" + TaskNo + " 料箱号:" + PalletBarcode + " 到达入库站台：" + StationNo);
                         }
                         catch (Exception ex)
                         {
