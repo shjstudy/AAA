@@ -65,9 +65,10 @@
             this.pnlContext.Controls.Add(this.dgvMain);
             this.pnlContext.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContext.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.pnlContext.Location = new System.Drawing.Point(0, 52);
+            this.pnlContext.Location = new System.Drawing.Point(0, 78);
+            this.pnlContext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlContext.Name = "pnlContext";
-            this.pnlContext.Size = new System.Drawing.Size(1230, 554);
+            this.pnlContext.Size = new System.Drawing.Size(1845, 831);
             this.pnlContext.TabIndex = 2;
             // 
             // dgvMain
@@ -106,6 +107,7 @@
             this.dgvMain.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMain.Location = new System.Drawing.Point(0, 0);
+            this.dgvMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvMain.MultiSelect = false;
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.ReadOnly = true;
@@ -122,7 +124,7 @@
             this.dgvMain.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Orange;
             this.dgvMain.RowTemplate.Height = 23;
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMain.Size = new System.Drawing.Size(1230, 554);
+            this.dgvMain.Size = new System.Drawing.Size(1845, 831);
             this.dgvMain.TabIndex = 6;
             // 
             // colCellCode
@@ -181,8 +183,9 @@
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1230, 52);
+            this.pnlTop.Size = new System.Drawing.Size(1845, 78);
             this.pnlTop.TabIndex = 0;
             // 
             // toolStrip1
@@ -200,7 +203,8 @@
             this.toolStripButton_Query});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1230, 52);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1845, 78);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -243,24 +247,24 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(59, 49);
+            this.toolStripLabel1.Size = new System.Drawing.Size(87, 75);
             this.toolStripLabel1.Text = "RFID编号";
             // 
             // toolStrip_RFIDCode
             // 
             this.toolStrip_RFIDCode.Name = "toolStrip_RFIDCode";
-            this.toolStrip_RFIDCode.Size = new System.Drawing.Size(100, 52);
+            this.toolStrip_RFIDCode.Size = new System.Drawing.Size(148, 78);
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(44, 49);
+            this.toolStripLabel3.Size = new System.Drawing.Size(64, 75);
             this.toolStripLabel3.Text = "料箱号";
             // 
             // toolStrip_PalletID
             // 
             this.toolStrip_PalletID.Name = "toolStrip_PalletID";
-            this.toolStrip_PalletID.Size = new System.Drawing.Size(100, 52);
+            this.toolStrip_PalletID.Size = new System.Drawing.Size(148, 78);
             // 
             // toolStripButton_Query
             // 
@@ -275,14 +279,15 @@
             // 
             // frmRFID
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1230, 606);
+            this.ClientSize = new System.Drawing.Size(1845, 909);
             this.ControlBox = false;
             this.Controls.Add(this.pnlContext);
             this.Controls.Add(this.pnlTop);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmRFID";
-            this.Text = "RFID资料";
+            this.Text = "料箱RFID设定";
             this.Shown += new System.EventHandler(this.frmProduct_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).EndInit();
             this.pnlContext.ResumeLayout(false);
