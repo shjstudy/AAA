@@ -207,7 +207,7 @@
             this.MinimizeBox = false;
             this.Name = "frmRFIDEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "产品资料编辑";
+            this.Text = "RFID资料编辑";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRFIDEdit_FormClosing);
             this.Shown += new System.EventHandler(this.frmProductEdit_Shown);
             this.ResumeLayout(false);

@@ -263,7 +263,7 @@
             this.Controls.Add(this.pnlContext);
             this.Controls.Add(this.pnlTop);
             this.Name = "frmRFID";
-            this.Text = "产品资料";
+            this.Text = "RFID资料";
             this.Shown += new System.EventHandler(this.frmProduct_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).EndInit();
             this.pnlContext.ResumeLayout(false);
