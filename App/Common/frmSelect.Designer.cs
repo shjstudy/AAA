@@ -225,8 +225,10 @@
             this.dgView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgView.RowHeadersWidth = 25;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Orange;
             this.dgView.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgView.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dgView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Orange;
             this.dgView.RowTemplate.Height = 23;
             this.dgView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgView.Size = new System.Drawing.Size(647, 426);
