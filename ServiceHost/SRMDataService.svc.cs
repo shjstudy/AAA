@@ -49,15 +49,15 @@ namespace ServiceHost
                 else
                 {
                     PsRtn.Result = "NA";
-                    PsRtn.Code = ErrorCode.WrongParameter;
+                    PsRtn.Code = ErrorCode.UserNotLogined;   //e0001,      //仓库中缺乏指定物料
                     rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"NA\"" + ",\"Code\":\"ErrorCode.WrongParameter\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
 
                 }
             }
             catch (Exception ex)
             {
-                PsRtn.Result = "NA";
-                PsRtn.Code = ErrorCode.Exception;
+                PsRtn.Result = ex.Message; // "NA";
+                PsRtn.Code = ErrorCode.WrongParameter;  //e0002,      //立体仓库错误，从立体仓库中出料失败
                 rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"NA\"" + ",\"Code\":\""+ex.Message +"\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
             }
             Log.WriteToLog("1", "transWMSSupplementRequest-Rtn", rtnMessage);
