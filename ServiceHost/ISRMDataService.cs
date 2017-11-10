@@ -17,7 +17,7 @@ namespace ServiceHost
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "transWMSSupplementRequest", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
         //string transWCSTask(string taskData);
-        ResultData transWMSSupplementRequest(PartSupplementRequest Request);
+        PartSupplementResult transWMSSupplementRequest(PartSupplementRequest Request);
     }
    
     public enum PartColor { dark, light }
@@ -59,4 +59,22 @@ namespace ServiceHost
         WrongParameter,
         Exception
     }
+
+
+    public enum PartSupplementResultCode
+    {
+        e0000,      //补料成功，无错误
+        e0001,      //仓库中缺乏指定物料
+        e0002,      //立体仓库错误，从立体仓库中出料失败
+        e0003,      //AGV错误，无法完成补料
+        //...补充其余可能出现的错误
+    }
+    [DataContract]
+    public class PartSupplementResult              //在补料结束或者出现错误时返回补料结果
+    {
+        public int RequestID { get; set; }
+        public PartSupplementResultCode ResultCode { get; set; }            //如果补料不成功，MES会过一段时间再发送同一ID的Request，直到错误解决
+        public DateTime RequestResultTime { get; set; }        //只有成功完成补料，该属性才有值，否则为null
+    }
+
 }
