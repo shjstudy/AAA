@@ -19,7 +19,7 @@ namespace ServiceHost
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)] 
     public class SRMDataService : ISRMDataService
     {
-        public ResultData transWMSSupplementRequest(PartSupplementRequest Request)
+        public PartSupplementResult transWMSSupplementRequest(PartSupplementRequest Request)
         {
 
             string RecMessage = "{\"RequestID\":\"" + Request.RequestID + "\",\"Category\":\"" + Request.RequestPart.Category.ToString() + "\",\"Color\":\"" + Request.RequestPart.Color.ToString() + "\",\"RequestNumber\":\"" + Request.RequestNumber + "\",\"RequestTime\":\"" + Request.RequestTime + "\"}";
@@ -27,7 +27,8 @@ namespace ServiceHost
             Log.WriteToLog("0", "transWMSSupplementRequest--Rec", RecMessage);
             string rtnMessage = "";
 
-            ResultData PsRtn = new ResultData();
+            PartSupplementResult PsRtn = new PartSupplementResult();
+            PsRtn.RequestID = Request.RequestID;
             try
             {
                 BLL.BLLBase bll = new BLL.BLLBase();
@@ -41,23 +42,20 @@ namespace ServiceHost
 
                 if (dtTask.Rows.Count > 0)
                 {
-                    PsRtn.Result = "OK";
-                    PsRtn.Code = ErrorCode.OK;
 
+                    PsRtn.ResultCode = PartSupplementResultCode.e0000;
                     rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"OK\"" + ",\"Code\":\"ErrorCode.OK\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
                 }
                 else
                 {
-                    PsRtn.Result = "NA";
-                    PsRtn.Code = ErrorCode.UserNotLogined;   //e0001,      //仓库中缺乏指定物料
+                    PsRtn.ResultCode = PartSupplementResultCode.e0001;
                     rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"NA\"" + ",\"Code\":\"ErrorCode.WrongParameter\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
 
                 }
             }
             catch (Exception ex)
             {
-                PsRtn.Result = ex.Message; // "NA";
-                PsRtn.Code = ErrorCode.WrongParameter;  //e0002,      //立体仓库错误，从立体仓库中出料失败
+                PsRtn.ResultCode = PartSupplementResultCode.e0002;
                 rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"NA\"" + ",\"Code\":\""+ex.Message +"\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
             }
             Log.WriteToLog("1", "transWMSSupplementRequest-Rtn", rtnMessage);

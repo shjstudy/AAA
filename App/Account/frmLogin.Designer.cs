@@ -39,49 +39,55 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.txtUserName.Location = new System.Drawing.Point(86, 19);
+            this.txtUserName.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.txtUserName.Location = new System.Drawing.Point(129, 28);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(181, 26);
+            this.txtUserName.Size = new System.Drawing.Size(270, 35);
             this.txtUserName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.label1.Location = new System.Drawing.Point(25, 22);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.label1.Location = new System.Drawing.Point(38, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(87, 28);
             this.label1.TabIndex = 21;
             this.label1.Text = "用 户 名";
             // 
             // txtPassWord
             // 
             this.txtPassWord.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPassWord.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.txtPassWord.Location = new System.Drawing.Point(86, 55);
+            this.txtPassWord.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.txtPassWord.Location = new System.Drawing.Point(129, 82);
+            this.txtPassWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.Size = new System.Drawing.Size(181, 26);
+            this.txtPassWord.Size = new System.Drawing.Size(270, 35);
             this.txtPassWord.TabIndex = 2;
+            this.txtPassWord.Text = "1";
             this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.label2.Location = new System.Drawing.Point(25, 56);
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.label2.Location = new System.Drawing.Point(38, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(78, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "密    码";
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.btnCancel.Location = new System.Drawing.Point(173, 104);
+            this.btnCancel.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.btnCancel.Location = new System.Drawing.Point(260, 156);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(74, 32);
+            this.btnCancel.Size = new System.Drawing.Size(111, 48);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "取 消";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -89,10 +95,11 @@
             // 
             // btnOK
             // 
-            this.btnOK.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
-            this.btnOK.Location = new System.Drawing.Point(56, 104);
+            this.btnOK.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.btnOK.Location = new System.Drawing.Point(84, 156);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(74, 32);
+            this.btnOK.Size = new System.Drawing.Size(111, 48);
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "确 定";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -101,10 +108,10 @@
             // frmLogin
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(287, 152);
+            this.ClientSize = new System.Drawing.Size(430, 228);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
@@ -113,6 +120,7 @@
             this.Controls.Add(this.btnCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";

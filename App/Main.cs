@@ -367,9 +367,9 @@ namespace App
                     string msg1 = string.Format("[{0}] ", args.LogLevel);
                     string msg2 = string.Format("{0} ", DateTime.Now);
                     string msg3 = string.Format("{0} ", args.Message);
-                    this.lbLog.BeginUpdate();
                     if (args.LogLevel != LogLevel.DEBUG)
                     {
+                        this.lbLog.BeginUpdate();
                         ListViewItem item = new ListViewItem(new string[] { msg2, msg3 });
                         if (msg1.Contains("[ERROR]"))
                         {
