@@ -17,6 +17,7 @@ namespace ServiceHost
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "transWMSSupplementRequest", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
         //string transWCSTask(string taskData);
+        //PartSupplementResult transWMSSupplementRequest(PartSupplementRequest Request);
         PartSupplementResult transWMSSupplementRequest(PartSupplementRequest Request);
     }
    
@@ -69,7 +70,7 @@ namespace ServiceHost
         e0003,      //AGV错误，无法完成补料
         //...补充其余可能出现的错误
     }
-    [DataContract]
+    //[DataContract]
     public class PartSupplementResult              //在补料结束或者出现错误时返回补料结果
     {
         public int RequestID { get; set; }

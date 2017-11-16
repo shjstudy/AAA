@@ -29,6 +29,7 @@ namespace ServiceHost
 
             PartSupplementResult PsRtn = new PartSupplementResult();
             PsRtn.RequestID = Request.RequestID;
+            PsRtn.RequestResultTime = System.DateTime.Now;
             try
             {
                 BLL.BLLBase bll = new BLL.BLLBase();
@@ -44,6 +45,7 @@ namespace ServiceHost
                 {
 
                     PsRtn.ResultCode = PartSupplementResultCode.e0000;
+                    
                     rtnMessage = "{\"id\":\"" + Request.RequestID + "\",\"Result\":\"OK\"" + ",\"Code\":\"ErrorCode.OK\",\"finishDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "\"}";
                 }
                 else
